@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Бытовки.РФ</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="header-top">
+          <ul class="home-menu my-ul">
+            <li><a href="#">АКЦии и скидки</a></li>
+            <li><a href="#">скупка</a></li>
+            <li><a href="#">наличие</a></li>
+          </ul>
+          <div class="header-top__sales">
+            <p>Успей зафиксировать стоимость - поднятие цен в апреле</p>
+            <a href="#" class="btn btn-border">зафиксировать</a>
+          </div>
+        </div>
+
+        <div class="header-center">
+          <div class="logo-box">
+            <a href="index.html" class="logo"><img src="img/logo.jpg" alt=""></a>
+            <div class="logo-box__text">Продажа строительных бытовок</div>
+          </div>
+
+          <a href="#" class="location-links" data-toggle="modal" data-target="#locationModal">Санкт-Петербург</a>
+
+          <div class="header-box">
+            <a href="tel:8 (812) 209-00-38" class="phone header-box-links">
+              <span class="phone-icon header-box-links__icon"><img src="img/phone.svg" alt=""></span>
+              <span class="phone-text">8 (812) 209-00-38</span>
+            </a>
+
+            <a href="mailto:info@bytovki-rf.ru" class="mail header-box-links">
+              <span class="mail-icon header-box-links__icon"><img src="img/mail.svg" alt=""></span>
+              <span class="mail-text">info@bytovki-rf.ru</span>
+            </a>
+          </div>
+
+          <div class="schedule-box">
+            <div class="schedule-box__icon"><img src="img/clock.svg" alt=""></div>
+            <div class="schedule-box__text">
+              <p>пн.-сб. 9:00 - 21:00</p>
+              <p>вс. - выходной</p>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-green btn-consultation">консультация специалиста</a>
+        </div>
+
+        <div class="header-bottom">
+          <ul class="menu my-ul">
+            <li class="dropdown">
+              <a href="products.html">Продукты</a>
+              <ul class="dropdown-menu dropdown-menu-my">
+                <li>
+                  <a href="#">Блок-контейнеры</a>
+                </li>
+                <li>
+                  <a href="#">Бытовки</a>
+                  <ul class="dropdown-submenu">
+                    <li><a href="#">Металлические бытовки</a></li>
+                    <li><a href="#">Бытовки сэндвич</a></li>
+                    <li><a href="#">Деревянные бытовки</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#">Модульные здания</a>
+                </li>
+                <li>
+                  <a href="#">Торговые павильоны</a>
+                </li>
+                <li>
+                  <a href="#">Containex</a>
+                </li>
+                <li>
+                  <a href="#">Контейнеры</a>
+                </li>
+                <li>
+                  <a href="#">дома</a>
+                </li>
+                <li>
+                  <a href="#">бани</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="services.html">услуги</a></li>
+            <li><a href="useful.html">полезное</a></li>
+            <li><a href="objects.html">выполненные объекты</a></li>
+            <li><a href="about.html">компания</a></li>
+            <li><a href="reviews.html">отзывы</a></li>
+            <li><a href="contacts.html">контакты</a></li>
+          </ul>
+
+          <form method="post" class="form-search">
+            <label>
+              <input type="text" placeholder="Поиск" name="search" required>
+            </label>
+
+            <button type="submit"><img src="img/search.svg" alt=""></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--### HEADER end ###-->
+
+
+<!--### SECTION home ###-->
+<main class="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="home-slider">
+          <div class="slide">
+            <a href="#" class="home-item"><img src="img/slide1.jpg" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="home-item"><img src="img/slide1.jpg" alt=""></a>
+          </div>
+          <div class="slide">
+            <a href="#" class="home-item"><img src="img/slide1.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--### SECTION home END ###-->
+
+<!--### SECTION category ###-->
+<section class="category">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="category-wrapper">
+          <a href="catalog.html" class="category-item">
+            <span class="category-item__img"><img src="img/category1.jpg" alt=""></span>
+            <span class="category-item__name">Блок-контейнеры</span>
+          </a>
+          <a href="catalog.html" class="category-item">
+            <span class="category-item__img"><img src="img/category2.jpg" alt=""></span>
+            <span class="category-item__name">Бытовки</span>
+          </a>
+          <a href="catalog.html" class="category-item">
+            <span class="category-item__img"><img src="img/category3.jpg" alt=""></span>
+            <span class="category-item__name">Модульные здания</span>
+          </a>
+          <a href="catalog.html" class="category-item">
+            <span class="category-item__img"><img src="img/category4.jpg" alt=""></span>
+            <span class="category-item__name">Containex</span>
+          </a>
+          <a href="catalog.html" class="category-item">
+            <span class="category-item__img"><img src="img/category5.jpg" alt=""></span>
+            <span class="category-item__name">Торговые павильоны</span>
+          </a>
+          <a href="catalog.html" class="category-item">
+            <span class="category-item__img"><img src="img/category6.jpg" alt=""></span>
+            <span class="category-item__name">Контейнеры</span>
+          </a>
+          <a href="catalog.html" class="category-item">
+            <span class="category-item__img"><img src="img/category7.jpg" alt=""></span>
+            <span class="category-item__name">Дома</span>
+          </a>
+          <a href="catalog.html" class="category-item">
+            <span class="category-item__img"><img src="img/category8.jpg" alt=""></span>
+            <span class="category-item__name">Бани</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION category END ###-->
+
+
+<!--### SECTION home-content ###-->
+<div class="home-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-9">
+
+        <div class="order-cabins">
+          <h1>КУПИТЬ БЫТОВКУ В САНКТ-ПЕТЕРБУРГЕ КОМПАНИИ «БЫТОВКИ РФ»</h1>
+          <div class="box-text">
+            <p>Качественная бытовка — незаменимый элемент строительной площадки. Компания «Бытовки РФ» предлагает
+              огромный ассортимент таких конструкций различных размеров и форм. Мы гарантируем качество всей продукции,
+              ведь нашими специалистами самостоятельно проектируется и изготавливается каждая представленная на сайте
+              бытовка. Купить бытовки в нашей компании можно по одним из самых низких цен в СПб. Такого эффекта удалось
+              достигнуть за счет прямых закупок материалов у производителей. У нас работают активные и молодые, но уже
+              достаточно опытные специалисты, поэтому мы всегда открыты для сотрудничества и совместного преодоления
+              новых вершин!</p>
+          </div>
+        </div>
+
+        <div class="construction">
+          <h2>СТРОИТЕЛЬСТВО МОДУЛЬНОГО ОБЩЕЖИТИЯ ИЗ СЭНДВИЧ ПАНЕЛЕЙ – 10 ДНЕЙ ПОД КЛЮЧ</h2>
+
+          <div class="video-wrapper">
+            <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
+          </div>
+        </div>
+
+        <div class="construction">
+          <h2>Видео блог</h2>
+
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="video-wrapper">
+                <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="video-wrapper">
+                <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="construction">
+          <h2>Видео отзывы</h2>
+
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="video-wrapper">
+                <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row">
+                <div class="col-12 col-lg-6 mb-15">
+                  <div class="video-wrapper">
+                    <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-15">
+                  <div class="video-wrapper">
+                    <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-15">
+                  <div class="video-wrapper">
+                    <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-15">
+                  <div class="video-wrapper">
+                    <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="advantages-home">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="advantages-home-box">
+                <div class="advantages-home-box__icon"><img src="img/advantages1.svg" alt=""></div>
+                <div class="advantages-home-box__text">
+                  <p>Ведущих поставщик в Северо-
+                    Западном федеральном округе</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="advantages-home-box">
+                <div class="advantages-home-box__icon"><img src="img/advantages2.svg" alt=""></div>
+                <div class="advantages-home-box__text">
+                  <p>Работаем в двух сегментах рынка
+                    эконом и премиум</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="advantages-home-box">
+                <div class="advantages-home-box__icon"><img src="img/advantages3.svg" alt=""></div>
+                <div class="advantages-home-box__text">
+                  <p>Всегда есть готовые модели на
+                    складе
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="advantages-home-box">
+                <div class="advantages-home-box__icon"><img src="img/advantages4.svg" alt=""></div>
+                <div class="advantages-home-box__text">
+                  <p>Собственный автопарк из 8 ед.
+                    спецтехники</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="advantages-home-box">
+                <div class="advantages-home-box__icon"><img src="img/advantages5.svg" alt=""></div>
+                <div class="advantages-home-box__text">
+                  <p>Сдаем объекты в срок</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="advantages-home-box">
+                <div class="advantages-home-box__icon"><img src="img/advantages6.svg" alt=""></div>
+                <div class="advantages-home-box__text">
+                  <p>Удобные графики платежей</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="selling">
+          <h2>ПРОДАЖА СТРОИТЕЛЬНЫХ БЫТОВОК</h2>
+          <div class="box-text">
+            <p>Особенностью нашей компании является прозрачное и логичное формирование цены на строительные бытовки и
+              другую продукцию. Мы постоянно развиваемся и активно работаем над расширением ассортимента и оптимизацией
+              производственного процесса. Главный вектор нашей деятельности — продажа строительных бытовок следующих
+              типов:</p>
+          </div>
+
+          <div class="selling-box">
+            <div class="selling-box__icon"><img src="img/selling1.svg" alt=""></div>
+            <div class="selling-box__text">
+              <p>Бытовка эконом, сделанная из дерева, т.е. <a href="#" class="color-accent d-inline">деревянная
+                бытовка</a> – наилучший вариант для вашего участка или
+                дачи, временного строительного домика или более долгосрочного использования. Экологически чистый
+                материал, легкость установки и демонтажа, отменное качество и небольшой вес конструкции, а также ее
+                демократичная цена давно уже снискали огромную популярность среди населения нашей страны, а также у
+                застройщиков всех уровней. Сама по себе бытовка эконом класса – долговечная и устойчивая конструкция.
+                При ее производстве делается защитная обработка деревянных материалов, способная в значительной мере
+                продлить эффективную эксплуатацию помещения.</p>
+            </div>
+          </div>
+
+          <div class="selling-box">
+            <div class="selling-box__icon"><img src="img/selling2.svg" alt=""></div>
+            <div class="selling-box__text">
+              <p>Качественные <a href="#" class="color-accent d-inline">металлические бытовки</a> – другой, не менее
+                популярный и прогрессивный, вариант приобретения
+                временного жилья. Не следует думать о том, что металлические конструкции подвержены коррозии, поэтому не
+                слишком долговечны. При изготовлении блоков все материалы тщательно обрабатываются против ржавчины.
+                Утепленные варианты строений предполагают качественную эксплуатацию даже при существенных морозах.</p>
+            </div>
+          </div>
+
+          <div class="selling-box">
+            <div class="selling-box__icon"><img src="img/selling3.svg" alt=""></div>
+            <div class="selling-box__text">
+              <p><a href="#" class="color-accent d-inline">Модульные здания</a>, изготавливаемые компанией «Бытовки.
+                РФ», являются сегодня наиболее часто реализуемым
+                проектом для широкой категории населения. Их простота и дешевизна, легкость и долговечность не вызывают
+                сомнений.</p>
+            </div>
+          </div>
+
+          <div class="box-text">
+            <p>Помимо этого, мы предлагаем своим клиентам огромное разнообразие планировок таких конструкций. У нас
+              можно приобрести бытовки с одной или двумя комнатами, а также различной степенью утепления. Кроме продажи
+              строительных бытовок, мы осуществляем реализацию и других служебных зданий. К ним относятся:</p>
+          </div>
+
+          <div class="selling-cities">
+            <div class="selling-cities-row">
+              <div class="selling-cities-box">
+                <div class="selling-cities-box__icon"><img src="img/herb1.png" alt=""></div>
+                <p>Москва</p>
+              </div>
+              <div class="selling-cities-box">
+                <div class="selling-cities-box__icon"><img src="img/herb2.png" alt=""></div>
+                <p>Екатеренбург</p>
+              </div>
+              <div class="selling-cities-box">
+                <div class="selling-cities-box__icon"><img src="img/herb3.png" alt=""></div>
+                <p>Нижний Новгород</p>
+              </div>
+              <div class="selling-cities-box">
+                <div class="selling-cities-box__icon"><img src="img/herb4.png" alt=""></div>
+                <p>Челябинск</p>
+              </div>
+            </div>
+            <div class="selling-cities-row">
+              <div class="selling-cities-box">
+                <div class="selling-cities-box__icon"><img src="img/herb5.png" alt=""></div>
+                <p>Красноярск</p>
+              </div>
+              <div class="selling-cities-box">
+                <div class="selling-cities-box__icon"><img src="img/herb6.png" alt=""></div>
+                <p>Самара</p>
+              </div>
+              <div class="selling-cities-box">
+                <div class="selling-cities-box__icon"><img src="img/herb7.png" alt=""></div>
+                <p>Казань</p>
+              </div>
+              <div class="selling-cities-box">
+                <div class="selling-cities-box__icon"><img src="img/herb8.png" alt=""></div>
+                <p>Новосибирск</p>
+              </div>
+              <div class="selling-cities-box">
+                <div class="selling-cities-box__icon"><img src="img/herb9.png" alt=""></div>
+                <p>Тюмень</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="selling-cities">
+            <div class="selling-cities-row">
+              <p>Владивосток</p>
+              <p>Воронеж</p>
+              <p>Гатчина</p>
+              <p>Иркутск</p>
+              <p>Краснодар</p>
+              <p>Магнитогорск</p>
+              <p>Омск</p>
+              <p>Пермь</p>
+            </div>
+            <div class="selling-cities-row">
+              <p>Петропавловск-Камчатский</p>
+              <p>Сургут</p>
+              <p>Ульяновск</p>
+              <p>Хабаровск</p>
+              <p>Ханты-Мансийск</p>
+              <p>Чебоксары</p>
+              <p>Ярославль</p>
+            </div>
+          </div>
+
+          <div class="box-text">
+            <p>У нас можно купить бытовку, которая будет обладать прекрасным качеством, и при этом избежать переплат. Мы
+              чутко следим за своей репутацией, поэтому вероятность брака среди нашей продукции исключена. Наша компания
+              предлагает своим клиентам купить бытовку как для строительных, так и любых других видов работ целей
+              (бытовки могут применяться в дачном хозяйстве). Утепленные модели нашего производства могут использоваться
+              даже при температурах ниже -30 градусов по Цельсию.</p>
+          </div>
+        </div>
+
+        <div class="advantages">
+          <h2>ПОЧЕМУ КУПИТЬ БЫТОВКИ В НАШЕЙ КОМПАНИИ - ЭТО ПО-НАСТОЯЩЕМУ ВЫГОДНО?</h2>
+          <div class="box-text">
+            <p>Наша компания, помимо доступных цен, обладает целым рядом других преимуществ. Основными из них являются
+              следующие:</p>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="advantages-box">
+                <div class="advantages-box__icon"><img src="img/adv1.svg" alt=""></div>
+                <div class="advantages-box__text">
+                  <p>Мы предоставляем на всю свою продукцию 1 год гарантии</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="advantages-box">
+                <div class="advantages-box__icon"><img src="img/adv2.svg" alt=""></div>
+                <div class="advantages-box__text">
+                  <p>В нашей компании все заказы выполняются очень быстро</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="advantages-box">
+                <div class="advantages-box__icon"><img src="img/adv3.svg" alt=""></div>
+                <div class="advantages-box__text">
+                  <p>На наших складах всегда есть готовые экземпляры
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="box-text">
+                <p>Для постоянных клиентов мы предоставляем скидки. Мы открыты для сотрудничества и готовы выполнить
+                  заказ любого объема.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-3">
+        <a href="#" class="banner"><img src="img/banner1.jpg" alt=""></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--### SECTION home-content END ###-->
+
+<!--### SECTION  ###-->
+<section class="">
+  <div class="container">
+
+  </div>
+</section>
+<!--### SECTION END ###-->
+
+
+<!--### SECTION  ###-->
+<section class="">
+  <div class="container">
+
+  </div>
+</section>
+<!--### SECTION END ###-->
+
+<!--### SECTION  ###-->
+<section class="">
+  <div class="container">
+
+  </div>
+</section>
+<!--### SECTION END ###-->
+
+
+<!--### SECTION clients ###-->
+<section class="clients">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Наши клиенты</h2>
+
+        <div class="clients-slider">
+          <div class="slide">
+            <div class="clients-item"><img src="img/metro-spb1.jpg" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="clients-item"><img src="img/vozrozhdenie.jpg" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="clients-item"><img src="img/konczerntitan2.jpg" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="clients-item"><img src="img/fosagro1.jpg" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="clients-item"><img src="img/metro-spb1.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--### SECTION clients END ###-->
+
+<!--### FOOTER  ###-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-top">
+          <div class="subscribe-box">
+            <div class="subscribe-box__icon"><img src="img/mail-subscribe.png" alt=""></div>
+            <div class="subscribe-box__text">Подписывайтесь на
+              новости и акции
+            </div>
+          </div>
+
+          <form method="post" class="form-subscribe">
+            <label><input type="text" placeholder="Ваш e-mail" name="mail"></label>
+            <button type="submit" class="btn btn-green">подписаться</button>
+          </form>
+        </div>
+        <div class="footer-center">
+          <div class="footer-center-content">
+            <div class="footer-box">
+              <h3>Продукты</h3>
+              <ul class="footer-menu my-ul">
+                <li><a href="#">Блок-контейнеры</a></li>
+                <li><a href="#">Бытовки</a></li>
+                <li><a href="#">Модульные здания</a></li>
+                <li><a href="#">Containex</a></li>
+                <li><a href="#">Торговые павильоны</a></li>
+                <li><a href="#">Контейнеры</a></li>
+                <li><a href="#">Дома</a></li>
+                <li><a href="#">Бани</a></li>
+              </ul>
+            </div>
+            <div class="footer-box">
+              <h3>Услуги</h3>
+              <ul class="footer-menu my-ul">
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Аренда</a></li>
+                <li><a href="#">Скупка и продажа б/у</a></li>
+                <li><a href="#">Ремонт бытовок</a></li>
+              </ul>
+            </div>
+            <div class="footer-box">
+              <h3>Проекты</h3>
+              <ul class="footer-menu my-ul">
+                <li><a href="#">Блок-контейнеры</a></li>
+                <li><a href="#">Модульные здания</a></li>
+                <li><a href="#">Переоборудованние</a></li>
+                <li><a href="#">Деревянные дома</a></li>
+                <li><a href="#">Посты охраны</a></li>
+                <li><a href="#">Торговые павильоны</a></li>
+                <li><a href="#">Спец. контейнеры</a></li>
+              </ul>
+            </div>
+            <div class="footer-box">
+              <h3>Компания</h3>
+              <ul class="footer-menu my-ul">
+                <li><a href="#">Производство</a></li>
+                <li><a href="#">Динамика развития</a></li>
+                <li><a href="#">Наша команда</a></li>
+                <li><a href="#">Отзывы</a></li>
+              </ul>
+            </div>
+            <div class="footer-box">
+              <h3>Контакты</h3>
+              <a href="tel:+78122090038" class="links-contacts">
+                <i class="fa-solid fa-phone"></i>
+                +7 (812) 209-00-38
+              </a>
+              <a href="https://wa.me/+79110046888" class="links-contacts">
+                <i class="fab fa-whatsapp"></i>
+                +7 (911) 004-68-88
+              </a>
+              <a href="viber://chat?number=%2B79110046888" class="links-contacts">
+                <img src="img/viber.png" alt="">
+                +7 (911) 004-68-88
+              </a>
+
+              <div class="schedule">
+                <i class="far fa-clock"></i>
+                <p>пн.-сб. 9:00 - 21:00 <br>
+                  вс. - выходной</p>
+              </div>
+
+              <a href="mailto:info@bytovki-rf.ru" class="mail links-contacts">
+                <i class="far fa-envelope"></i>
+                info@bytovki-rf.ru</a>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <a href="index.html" class="logo"><img src="img/footer-logo.png" alt=""></a>
+
+            <a href="#" class="politics-link color-white" target="_blank">Политика конфиденциальности</a>
+
+            <ul class="list-social my-ul">
+              <li><img src="img/instagram-logo.png" alt=""></li>
+              <li><img src="img/facebook-logo.png" alt=""></li>
+              <li><img src="img/youtube-symbol.png" alt=""></li>
+              <li><img src="img/vk-social-logotype.png" alt=""></li>
+            </ul>
+
+            <div class="copyright-lines">
+              <p>© Бытовки.РФ, 2015 - 2022</p>
+              <p>Cайт не является публичной офертой</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--### FOOTER END ###-->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

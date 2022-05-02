@@ -1,0 +1,13 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 327 512" style="enable-background:new 0 0 327 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+</style>
+    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="13" y1="255.9985" x2="339.501" y2="255.9985"
+                    gradientTransform="matrix(-1 0 0 1 326.501 0)">
+	<stop offset="9.800889e-02" style="stop-color:#22B4E9"/>
+        <stop offset="0.9617" style="stop-color:#0098E1"/>
+</linearGradient>
+    <path class="st0" d="M256,0L128,128L0,256l128,128l128,128l35.3-35.2l35.3-35.2l-92.7-92.8L141,256l92.7-92.8l92.7-92.8l-35.2-35.2
+	L256,0z"/>
+</svg>

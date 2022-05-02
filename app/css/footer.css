@@ -1,0 +1,190 @@
+/*==========  footer  ==========*/
+footer {
+  color: #fff; }
+
+.footer-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #fff;
+  padding: 25px 54px;
+  background: #004D73; }
+
+.subscribe-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  margin: 0 53px 0 0; }
+  .subscribe-box__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 23px 0 0;
+    width: 61px; }
+  .subscribe-box__text {
+    max-width: 125px;
+    width: 100%; }
+
+.form-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  border-radius: 3px;
+  overflow: hidden;
+  max-width: 705px;
+  width: 100%; }
+  .form-subscribe label {
+    max-width: 545px;
+    width: 100%; }
+  .form-subscribe input {
+    height: 50px;
+    padding: 0 27px; }
+
+.footer-center {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0172ab), to(#018cbf));
+  background-image: linear-gradient(to bottom, #0172ab, #018cbf); }
+
+.footer-bottom {
+  width: 100%;
+  padding: 10px 19px 17px 34px;
+  border-top: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.footer-center-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 100px 35px; }
+
+.footer-box {
+  width: calc(20% - 30px); }
+  .footer-box h3 {
+    padding: 0 0 10px;
+    font-size: 23px;
+    border-bottom: 1px solid #15a9e6;
+    width: 100%;
+    margin: 0 0 13px; }
+
+.footer-menu li {
+  margin: 0 0 9px; }
+  .footer-menu li:last-child {
+    margin: 0; }
+  .footer-menu li a {
+    color: #fff; }
+    .footer-menu li a:hover {
+      color: #ffe14d; }
+
+.politics-link {
+  margin: 0 auto; }
+
+.copyright-lines {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 0 0;
+  font-size: 12px; }
+
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-social li {
+    margin: 0 8px 0 0; }
+    .list-social li:last-child {
+      margin: 0; }
+    .list-social li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 23px;
+      height: 23px; }
+
+.links-contacts {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  margin: 0 0 5px; }
+  .links-contacts:last-child {
+    margin: 0; }
+  .links-contacts:hover {
+    color: #ffe14d; }
+  .links-contacts i, .links-contacts img {
+    margin: 0 8px 0 0;
+    font-size: 15px; }
+  .links-contacts img {
+    max-width: 13px; }
+
+.schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 25px 0; }
+  .schedule i {
+    margin: 6px 8px 0 0; }
+
+/*==========  footer end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/
