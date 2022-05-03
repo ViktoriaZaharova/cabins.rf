@@ -82,6 +82,40 @@
     left: 0;
     top: 0; }
 
+.video-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .video-row .video-wrapper {
+    width: calc(50% - 5px);
+    padding-top: 29%; }
+
+.video-col {
+  width: calc(50% - 5px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .video-col .video-wrapper {
+    padding-top: 28%;
+    margin: 0 0 10px; }
+
 .advantages-home {
   margin: 40px 0 0; }
 
@@ -221,7 +255,9 @@
   padding: 8px 11px 12px;
   text-align: center;
   color: #222;
-  border: 2px solid transparent; }
+  border: 2px solid transparent;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
   .category-item__img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -232,20 +268,34 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 100px; }
+    height: 100px;
+    margin: 0 auto; }
     .category-item__img img {
-      max-height: 100%; }
+      max-height: 100%;
+      -webkit-transition: 1s ease;
+      transition: 1s ease; }
+  .category-item__name {
+    color: #222;
+    text-align: center;
+    margin: 0 auto; }
   .category-item:hover {
     -webkit-box-shadow: 0px 10px 21px 0 rgba(0, 0, 0, 0.2);
             box-shadow: 0px 10px 21px 0 rgba(0, 0, 0, 0.2);
-    border: solid 2px #00a4e5;
-    color: #00a4e5; }
+    border: solid 2px #00a4e5; }
+    .category-item:hover .category-item__img img {
+      -webkit-transform: scale3d(1.1, 1.1, 1);
+              transform: scale3d(1.1, 1.1, 1); }
+    .category-item:hover .category-item__name {
+      color: #00a4e5; }
 
 /*==========  section category end  ==========*/
 /*==========  section clients ==========*/
 .clients {
   margin: 45px 0 0; }
-  .clients h2 {
+  .clients h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    width: 100%;
     margin: 0 0 40px; }
 
 .clients-slider {

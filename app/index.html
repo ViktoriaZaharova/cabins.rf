@@ -30,9 +30,7 @@
   <link rel="stylesheet" href="css/media.css">
 
 </head>
-
 <body>
-
 
 <header>
   <div class="container">
@@ -41,7 +39,7 @@
         <div class="header-top">
           <ul class="home-menu my-ul">
             <li><a href="#">АКЦии и скидки</a></li>
-            <li><a href="#">скупка</a></li>
+            <li><a href="#" class="color-red">скупка</a></li>
             <li><a href="#">наличие</a></li>
           </ul>
           <div class="header-top__sales">
@@ -51,12 +49,27 @@
         </div>
 
         <div class="header-center">
+          <a href="#" class="btn-burger"></a>
+
           <div class="logo-box">
             <a href="index.html" class="logo"><img src="img/logo.jpg" alt=""></a>
             <div class="logo-box__text">Продажа строительных бытовок</div>
           </div>
 
-          <a href="#" class="location-links" data-toggle="modal" data-target="#locationModal">Санкт-Петербург</a>
+          <div class="location-box">
+            <a href="#" class="location-links">Санкт-Петербург</a>
+
+            <div class="location-dropdown">
+              <h4>Ваше местоположение – <a href="#" class="color-accent text-decoration d-inline">Санкт-Петербург</a>
+              </h4>
+
+              <div class="location-dropdown__line">
+                <a href="#" class="btn btn-red location-dropdown__close">Да</a>
+                <a href="#" class="color-grey border-dotted" data-toggle="modal" data-target="#locationModal">Нет,
+                  изменить</a>
+              </div>
+            </div>
+          </div>
 
           <div class="header-box">
             <a href="tel:8 (812) 209-00-38" class="phone header-box-links">
@@ -78,7 +91,8 @@
             </div>
           </div>
 
-          <a href="#" class="btn btn-green btn-consultation">консультация специалиста</a>
+          <a href="#" class="btn btn-green btn-consultation" data-target="#callbackModal" data-toggle="modal">консультация
+            специалиста</a>
         </div>
 
         <div class="header-bottom">
@@ -126,13 +140,65 @@
             <li><a href="contacts.html">контакты</a></li>
           </ul>
 
-          <form method="post" class="form-search">
-            <label>
-              <input type="text" placeholder="Поиск" name="search" required>
-            </label>
+          <div class="search-wrapper">
+            <form method="post" class="form-search">
+              <label>
+                <input type="text" placeholder="Поиск" name="search" required>
+              </label>
 
-            <button type="submit"><img src="img/search.svg" alt=""></button>
-          </form>
+              <button type="submit"><img src="img/search.svg" alt=""></button>
+            </form>
+
+            <div class="search-dropdown">
+              <div class="search-item">
+                <h4>Разделы</h4>
+                <a href="#" class="search-links">
+                  <span class="search-links__icon"><img src="img/domaikonka1.png" alt=""></span>
+                  <span class="search-links__text">Строительство</span>
+                </a>
+                <a href="#" class="search-links">
+                  <span class="search-links__icon"><img src="img/domaikonka1.png" alt=""></span>
+                  <span class="search-links__text">Строительство домов</span>
+                </a>
+                <a href="#" class="search-links">
+                  <span class="search-links__icon"><img src="img/domaikonka1.png" alt=""></span>
+                  <span class="search-links__text">Строительство</span>
+                </a>
+              </div>
+
+              <div class="search-item">
+                <h4>Карточки</h4>
+                <a href="#" class="search-links">
+                  <span class="search-links__icon"><img src="img/domaikonka1.png" alt=""></span>
+                  <span class="search-links__text">Строительство</span>
+                </a>
+                <a href="#" class="search-links">
+                  <span class="search-links__icon"><img src="img/domaikonka1.png" alt=""></span>
+                  <span class="search-links__text">Строительство</span>
+                </a>
+              </div>
+
+              <div class="search-item">
+                <h4>Блог</h4>
+                <a href="#" class="search-links">
+                  <span class="search-links__icon"><img src="img/domaikonka1.png" alt=""></span>
+                  <span class="search-links__text">Строительство</span>
+                </a>
+                <a href="#" class="search-links">
+                  <span class="search-links__icon"><img src="img/domaikonka1.png" alt=""></span>
+                  <span class="search-links__text">Строительство</span>
+                </a>
+                <a href="#" class="search-links">
+                  <span class="search-links__icon"><img src="img/domaikonka1.png" alt=""></span>
+                  <span class="search-links__text">Строительство</span>
+                </a>
+                <a href="#" class="search-links">
+                  <span class="search-links__icon"><img src="img/domaikonka1.png" alt=""></span>
+                  <span class="search-links__text">Строительство</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -169,10 +235,12 @@
     <div class="row">
       <div class="col-12">
         <div class="category-wrapper">
-          <a href="catalog.html" class="category-item">
-            <span class="category-item__img"><img src="img/category1.jpg" alt=""></span>
-            <span class="category-item__name">Блок-контейнеры</span>
-          </a>
+          <div class="category-item">
+            <a href="catalog.html" class="category-item__img">
+              <img src="img/category1.jpg" alt="">
+            </a>
+            <a href="catalog.html" class="category-item__name">Блок-контейнеры</a>
+          </div>
           <a href="catalog.html" class="category-item">
             <span class="category-item__img"><img src="img/category2.jpg" alt=""></span>
             <span class="category-item__name">Бытовки</span>
@@ -232,23 +300,25 @@
           <h2>СТРОИТЕЛЬСТВО МОДУЛЬНОГО ОБЩЕЖИТИЯ ИЗ СЭНДВИЧ ПАНЕЛЕЙ – 10 ДНЕЙ ПОД КЛЮЧ</h2>
 
           <div class="video-wrapper">
-            <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
+            <iframe src="https://www.youtube.com/embed/yBQ3uKdYLr8" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
           </div>
         </div>
 
         <div class="construction">
           <h2>Видео блог</h2>
 
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="video-wrapper">
-                <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
-              </div>
+          <div class="video-row">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/zMG_8uSefZc" title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
             </div>
-            <div class="col-12 col-md-6">
-              <div class="video-wrapper">
-                <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
-              </div>
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/KFytUPCuJjI" title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -256,37 +326,36 @@
         <div class="construction">
           <h2>Видео отзывы</h2>
 
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="video-wrapper">
-                <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
-              </div>
+          <div class="video-row">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/Ut_7pCe-ctA" title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
             </div>
-            <div class="col-12 col-md-6">
-              <div class="row">
-                <div class="col-12 col-lg-6 mb-15">
-                  <div class="video-wrapper">
-                    <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6 mb-15">
-                  <div class="video-wrapper">
-                    <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6 mb-15">
-                  <div class="video-wrapper">
-                    <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6 mb-15">
-                  <div class="video-wrapper">
-                    <a href="#" class="btn-play"><img src="img/youtube.svg" alt=""></a>
-                  </div>
-                </div>
+            <div class="video-col">
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/d_iy6pIUccI" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+              </div>
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/jY5mIljRRlA" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+              </div>
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/_QNxaLN6DhU" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+              </div>
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/yoDx6vE4tes" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
               </div>
             </div>
           </div>
+
         </div>
 
         <div class="advantages-home">
@@ -554,7 +623,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2>Наши клиенты</h2>
+        <h3>Наши клиенты</h3>
 
         <div class="clients-slider">
           <div class="slide">
@@ -693,6 +762,204 @@
 </footer>
 <!--### FOOTER END ###-->
 
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Заявка на консультацию</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="img/close-popup.svg" alt="">
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Оставьте свои данные и наш специалист свяжется
+            с Вами в ближайшее время</p>
+        </div>
+        <form method="post" class="form">
+          <label><input type="text" placeholder="Ваше имя" name="name"></label>
+          <label><input type="text" placeholder="Ваш e-mail*" name="email" required></label>
+          <label><input type="text" placeholder="Ваш телефон*" name="phone" required></label>
+
+          <label class="checkbox">
+            <input type="checkbox" name="checkbox" class="inp-check" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Даю согласие на обработку персональных данных</span>
+          </label>
+
+          <button type="submit" class="btn btn-green">отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Спасибо!</h5>
+        <div class="box-text">
+          <p>Ваша заявка принята и уже обработывается</p>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="img/close-popup.svg" alt="">
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modal-location" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Выберите свой регион</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="img/close-popup.svg" alt="">
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form-search-location">
+          <label>
+            <input type="text" placeholder="Быстрый поиск города" name="search" required>
+          </label>
+
+          <a href="#" class="btn-clear-search"><img src="img/close-popup.svg" alt=""></a>
+          <button type="submit" class="btn btn-red">Сохранить</button>
+        </form>
+
+        <div class="popular-cities">
+          <a href="#" class="popular-cities-item">Москва</a>
+          <a href="#" class="popular-cities-item">Санкт-Петербург</a>
+          <a href="#" class="popular-cities-item">Екатеринбург</a>
+          <a href="#" class="popular-cities-item">Казань</a>
+          <a href="#" class="popular-cities-item">Красноярск</a>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="cities-column-item">
+              <div class="letter">A</div>
+              <a href="#" class="cities-column-links" data-toggle="modal" data-dismiss="modal"
+                 data-target="#locationModal2">Алтайский край</a>
+              <a href="#" class="cities-column-links">Астраханская область</a>
+            </div>
+            <div class="cities-column-item">
+              <div class="letter">Б</div>
+              <a href="#" class="cities-column-links">Белгородская область</a>
+              <a href="#" class="cities-column-links">Брянская область</a>
+            </div>
+            <div class="cities-column-item">
+              <div class="letter">В</div>
+              <a href="#" class="cities-column-links">Владимирская область</a>
+              <a href="#" class="cities-column-links">Волгоградская область</a>
+              <a href="#" class="cities-column-links">Воронежская область</a>
+            </div>
+            <div class="cities-column-item">
+              <div class="letter">И</div>
+              <a href="#" class="cities-column-links">Ивановская область</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="cities-column-item">
+              <div class="letter">К</div>
+              <a href="#" class="cities-column-links">Калужская область</a>
+              <a href="#" class="cities-column-links">Костромская область</a>
+              <a href="#" class="cities-column-links">Курская область</a>
+            </div>
+            <div class="cities-column-item">
+              <div class="letter">Л</div>
+              <a href="#" class="cities-column-links">Ленинградская область</a>
+              <a href="#" class="cities-column-links">Липецкая область</a>
+            </div>
+            <div class="cities-column-item">
+              <div class="letter">М</div>
+              <a href="#" class="cities-column-links">Московская область</a>
+            </div>
+            <div class="cities-column-item">
+              <div class="letter">О</div>
+              <a href="#" class="cities-column-links">Орловская область</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="cities-column-item">
+              <div class="letter">Р</div>
+              <a href="#" class="cities-column-links">Ростовская область</a>
+              <a href="#" class="cities-column-links">Рязанская область</a>
+            </div>
+            <div class="cities-column-item">
+              <div class="letter">С</div>
+              <a href="#" class="cities-column-links">Смоленская область</a>
+            </div>
+            <div class="cities-column-item">
+              <div class="letter">Т</div>
+              <a href="#" class="cities-column-links">Тамбовская область</a>
+              <a href="#" class="cities-column-links">Тверская область</a>
+              <a href="#" class="cities-column-links">Тульская область</a>
+            </div>
+            <div class="cities-column-item">
+              <div class="letter">Я</div>
+              <a href="#" class="cities-column-links">Ярославская область</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modal-location" id="locationModal2" tabindex="-1" aria-labelledby="locationModal2Label"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Выберите свой город</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="img/close-popup.svg" alt="">
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form-search-location">
+          <label>
+            <input type="text" placeholder="Быстрый поиск города" name="search" required>
+          </label>
+
+          <a href="#" class="btn-clear-search"><img src="img/close-popup.svg" alt=""></a>
+          <button type="submit" class="btn btn-red">Сохранить</button>
+        </form>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="letter">Алтайский край</div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="cities-column-item">
+              <a href="#" class="cities-column-links">Барнаул</a>
+              <a href="#" class="cities-column-links">Алейск</a>
+              <a href="#" class="cities-column-links">Бийск</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="cities-column-item">
+              <a href="#" class="cities-column-links">
+                Камень-на-Оби</a>
+              <a href="#" class="cities-column-links">Новоалтайск</a>
+              <a href="#" class="cities-column-links">Рубцовск</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="cities-column-item">
+              <a href="#" class="cities-column-links">Славгород</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"

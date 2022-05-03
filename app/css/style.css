@@ -72,13 +72,14 @@ input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0;
+  padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "PT Sans Narrow", sans-serif;
-  border: none;
-    border-radius: 0;
+  border: solid 1px #d9d9d9;
+    border-radius: 3px;
   width: 100%;
+  height: 46px;
   color: #666;
   font-size: 16px; }
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
@@ -96,7 +97,52 @@ input, textarea, select {
 
 label {
   display: block;
-  width: 100%; }
+  width: 100%;
+  margin: 0 0 15px; }
+
+.checkbox {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.inp-check {
+  display: none; }
+
+.checkbox-custom {
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  background: #00a4e5;
+  margin: 0 8px 0 0;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer; }
+  .checkbox-custom:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 10px;
+    height: 9px;
+    background: url("../img/check.png") no-repeat center;
+      background-size: 100%;
+    opacity: 0; }
+
+.inp-check:checked + .checkbox-custom:before {
+  opacity: 1; }
+
+.form button {
+  width: 100%;
+  height: 45px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "PT Sans Narrow", sans-serif; }
 
 button, .btn {
   outline: none;
@@ -160,6 +206,19 @@ button, .btn {
     background-image: -webkit-gradient(linear, right top, left top, from(#4ba442), to(#76cd57));
     background-image: linear-gradient(to left, #4ba442, #76cd57); }
 
+.btn-red {
+  color: #fff;
+  background: #e7222b;
+  border-radius: 10px;
+  height: 34px;
+  text-transform: none;
+  font-size: 16px;
+  font-family: "PT Sans Narrow", sans-serif;
+  padding: 11px 23px; }
+  .btn-red:hover {
+    background: #ffe14d;
+    color: #000; }
+
 .svg-icon {
   display: inline-block;
   width: 100%;
@@ -187,8 +246,20 @@ a.color-white:hover {
 a.color-accent:hover {
   color: #666; }
 
+.color-grey {
+  color: #666; }
+
+a.color-grey:hover {
+  color: #00a4e5; }
+
+.border-dotted {
+  border-bottom: 1px dotted #666; }
+
 .d-inline {
   display: inline-block; }
+
+.text-decoration {
+  text-decoration: underline; }
 
 .slick-arrow {
   z-index: 1;

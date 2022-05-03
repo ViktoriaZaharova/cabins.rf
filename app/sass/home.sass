@@ -78,6 +78,26 @@
     left: 0
     top: 0
 
+.video-row
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  .video-wrapper
+    width: calc(50% - 5px)
+    padding-top: 29%
+
+.video-col
+  width: calc(50% - 5px)
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  .video-wrapper
+    padding-top: 28%
+    margin: 0 0 10px
+
 .advantages-home
   margin: 40px 0 0
 
@@ -202,20 +222,28 @@
   text-align: center
   color: #222
   border: 2px solid transparent
-
+  transition: .3s ease
   &__img
     display: flex
     align-items: flex-start
     justify-content: center
     height: 100px
-
+    margin: 0 auto
     img
       max-height: 100%
-
+      transition: 1s ease
+  &__name
+    color: #222
+    text-align: center
+    margin: 0 auto
   &:hover
     box-shadow: 0px 10px 21px 0 rgba(0, 0, 0, 0.2)
     border: solid 2px #00a4e5
-    color: $accent
+    .category-item__img
+      img
+        transform: scale3d(1.1,1.1,1)
+    .category-item__name
+      color: $accent
 /*==========  section category end  ==========*/
 
 
@@ -224,7 +252,10 @@
 .clients
   margin: 45px 0 0
 
-  h2
+  h3
+    font-size: 24px
+    text-transform: uppercase
+    width: 100%
     margin: 0 0 40px
 
 .clients-slider
