@@ -1,7 +1,29 @@
 $('.clients-slider').slick({
     slidesToShow: 4,
     prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>'
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 360,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
 
 $('.home-slider').slick({
@@ -41,9 +63,22 @@ $('.location-dropdown__close').on('click', function (e) {
     $('.location-dropdown').fadeOut();
 });
 
-$('.btn-burger').on('click', function (e) {
+$('.btn-burger').on('click', function(e){
     e.preventDefault();
-    $(this).addClass('trigger');
-    $('.header-bottom').css('display','flex');
+
+    var
+        $this = $(this),
+        content = $('.header-bottom');
+
+
+    if(!$this.hasClass('trigger')){
+        $this.addClass('trigger');
+
+        content.css('display','flex');
+    } else {
+        $this.removeClass('trigger');
+
+        content.css('display','none');
+    }
 });
 

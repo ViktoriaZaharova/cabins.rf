@@ -1,41 +1,272 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /**/ }
+  .footer-center-content, .footer-top {
+    padding: 15px; }
+  .form-subscribe {
+    width: calc(100% - 209px);
+    padding: 0 0 0 30px; }
+  .subscribe-box {
+    margin: 0; }
+  .footer-bottom {
+    padding: 10px 15px; }
+  .search-wrapper {
+    max-width: 200px; }
+  .btn-consultation {
+    padding: 0 20px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /**/ }
+  .footer-box {
+    width: calc(25% - 10px);
+    margin: 0 0 30px; }
+    .footer-box h3 {
+      font-size: 21px; }
+  .schedule {
+    margin: 15px 0; }
+  .selling-cities-row > p, .selling-cities-box {
+    margin: 0 0 20px; }
+  .selling-box {
+    margin: 0 0 30px; }
+  .advantages-home-box {
+    font-size: 18px;
+    margin: 0 0 30px; }
+  .btn-consultation {
+    width: 100%;
+    margin: 10px auto 0; }
+  .schedule-box {
+    margin: 0; }
+  .header-top {
+    padding: 9px 20px; }
+  .menu {
+    width: 100%; }
+    .menu > li {
+      -webkit-box-flex: 1;
+          -ms-flex: auto;
+              flex: auto; }
+      .menu > li > a {
+        width: 100%;
+        text-align: center; }
+  .search-wrapper {
+    max-width: none;
+    width: 100%;
+    margin: 10px 0; }
+  .header-bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .form-search {
+    padding: 0 10px; }
+    .form-search button {
+      right: 20px; }
+  .header-top .btn {
+    margin: 10px auto 0; }
+  .header-top p {
+    margin: 0 0 0 auto; }
+  .header-fixed {
+    padding-top: 200px; }
+  .fixed .header-box {
+    margin: 0 0 0 auto; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /**/ }
+  .form-subscribe {
+    width: 100%;
+    margin: 20px 0 0;
+    padding: 0;
+    max-width: none; }
+  .subscribe-box {
+    margin: 0 auto; }
+  h2 {
+    font-size: 22px;
+    margin: 0 0 20px; }
+  .video-row .video-wrapper {
+    width: 100%;
+    margin: 0 0 10px;
+    padding-top: 52.55%; }
+  .video-col {
+    width: 100%; }
+    .video-col .video-wrapper {
+      width: calc(50% - 5px);
+      padding-top: 28%; }
+  .category-item {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    width: 25%; }
+  .header-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header-top p {
+      font-size: 14px;
+      margin: 0 auto; }
+  .header-center {
+    position: relative; }
+  .header-bottom {
+    display: none; }
+  .btn-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    bottom: 10px; }
+  .btn-consultation {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: calc(100% - 45px);
+    margin: 0 0 0 auto; }
+  .home-menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 14px;
+    margin: 0 auto 5px; }
+  header .schedule-box {
+    display: none; }
+  .header-box {
+    margin: 0 0 0 auto; }
+    .header-box .mail {
+      display: none; }
+    .header-box .schedule-box__text {
+      display: block;
+      text-align: right;
+      font-size: 12px; }
+  .header-box-links {
+    font-size: 15px;
+    margin: 0 0 5px; }
+  .header-box-links__icon {
+    width: 18px;
+    min-width: 18px;
+    margin: 0 7px 0 0; }
+  .location-dropdown {
+    display: none;
+    margin: 20px 0 0;
+    padding: 30px 20px; }
+    .location-dropdown:before {
+      border-bottom-width: 20px;
+      top: -20px; }
+  .menu > li {
+    width: 100%;
+    border-bottom: 1px dashed #fff; }
+    .menu > li:last-child {
+      border: none; }
+    .menu > li > a:before {
+      display: none; }
+  .dropdown-menu-my {
+    position: relative;
+    width: 100%; }
+  .dropdown-submenu {
+    left: 0;
+    position: relative;
+    width: 100%; } }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  .footer-box {
+    width: calc(50% - 10px); }
+  .clients-slider {
+    margin: 0 0 30px;
+    padding: 0 20px; }
+  .clients {
+    margin: 30px 0 0; }
+    .clients h3 {
+      margin: 0 0 20px; }
+  .btn-green {
+    padding: 0 17px; }
+  .list-social {
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  footer .logo {
+    margin: 0 auto; }
+  .politics-link {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto; }
+  .selling-box__icon {
+    margin: 10px 20px 0 0; }
+  .video-row .video-wrapper {
+    width: 100%; }
+  .video-row .video-wrapper {
+    margin: 0 0 10px;
+    padding-top: 52.55%; }
+  h1 {
+    font-size: 28px; }
+  .category-item {
+    width: 33.3%; }
+  .modal-dialog {
+    margin: auto; }
+  .form-search-location button {
+    padding: 11px 20px; }
+  .btn-clear-search {
+    right: 100px; }
+  .cities-column-item {
+    margin: 0 0 20px; }
+  .popular-cities {
+    margin: 20px 0 25px; } }
+
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .clients h3 {
+    font-size: 20px; }
+  .category-item {
+    width: 50%; }
+  .logo-box__text {
+    font-size: 12px; }
+  .logo {
+    max-width: 140px; }
+  .modal-content {
+    padding: 25px 30px; } }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }
+@media only screen and (max-width: 420px) {
+  .location-box {
+    width: 50%;
+    margin: 0 0 5px; }
+  .header-box {
+    margin: 0 0 5px;
+    width: 50%; }
+    .header-box .schedule-box__text {
+      position: absolute;
+      right: 0;
+      top: 22px; }
+  .logo {
+    max-width: 190px; }
+  .logo-box {
+    margin: 0 auto 5px 0; }
+  .logo-box__text {
+    font-size: 14px; }
+  .header-box-links {
+    margin: 0 0 0 auto; }
+  .fixed .header-box-links {
+    margin: 0 0 0 auto; }
+  .fixed .header-box .schedule-box__text {
+    top: 10px; }
+  .header-fixed {
+    padding-top: 210px; } }
 
-/*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /**/ }
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/ }
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/ }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /**/ }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  /**/ }
+@media only screen and (max-width: 360px) {
+  .footer-box {
+    width: 100%; }
+  .copyright-lines {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+  .form-subscribe button {
+    font-size: 13px; } }

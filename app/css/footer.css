@@ -52,7 +52,8 @@ footer {
   width: 100%; }
   .form-subscribe label {
     max-width: 545px;
-    width: 100%; }
+    width: 100%;
+    margin: 0; }
   .form-subscribe input {
     height: 50px;
     padding: 0 27px;

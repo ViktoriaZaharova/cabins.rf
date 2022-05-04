@@ -105,9 +105,9 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .inp-check {
   display: none; }
@@ -117,7 +117,7 @@ label {
   height: 14px;
   min-width: 14px;
   background: #00a4e5;
-  margin: 0 8px 0 0;
+  margin: 3px 8px 0 0;
   border-radius: 3px;
   position: relative;
   cursor: pointer; }
@@ -304,4 +304,5 @@ h1 {
 h2 {
   width: 100%;
   text-transform: uppercase;
-  margin: 0 0 27px; }
+  margin: 0 0 27px;
+  font-size: 24px; }
