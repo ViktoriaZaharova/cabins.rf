@@ -388,8 +388,57 @@
     width: 100%; }
 
 /*==========  sales end  ==========*/
-/*==========  certificates  ==========*/
-/*==========  certificates end  ==========*/
+/*==========  availability-page  ==========*/
+.availability-table {
+  margin: 30px 0 0; }
+
+.table td, .table th {
+  vertical-align: middle;
+  border: solid 1px #d9d9d9;
+  text-align: center; }
+
+.table td {
+  background: #fff;
+  padding: 10px 17px; }
+
+.table th {
+  background: #f2f2f2;
+  text-align: center;
+  vertical-align: middle; }
+
+.table thead {
+  color: #666;
+  border: none; }
+  .table thead th {
+    border: solid 1px #d9d9d9;
+    padding: 9px 30px; }
+
+.table tbody {
+  border: none; }
+
+.btn-order {
+  margin: 0 auto; }
+
+.availability-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 150px;
+  width: 100%; }
+  .availability-photo img {
+    width: 100%; }
+
+.description-text {
+  max-width: 415px;
+  text-align: left; }
+
+/*==========  availability-page end  ==========*/
 /*==========  certificates  ==========*/
 /*==========  certificates end  ==========*/
 /*==========  certificates  ==========*/

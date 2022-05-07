@@ -234,6 +234,46 @@
   .wrapper-content .item
     width: 25%
 
+  .availability-table
+    display: flex
+    flex-wrap: wrap
+    thead
+      display: none
+    tr
+      display: flex
+      flex-wrap: wrap
+      align-items: flex-start
+      border: solid 1px #d9d9d9
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+    td
+      width: 100%
+      padding: 5px
+      margin: 0 0 10px
+      border: none
+        bottom: solid 1px #d9d9d9
+      display: flex
+      align-items: flex-start
+      flex-wrap: wrap
+      text-align: left
+      &:before
+        content: attr(data-table)
+        display: block
+        width: 40%
+        font-weight: bold
+      &:last-child
+        margin: 0
+        border: none
+        &:before
+          display: none
+
+  .description-text
+    max-width: none
+
+  .sorting-item
+    padding: 7px 25px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
   .footer-box
@@ -320,6 +360,11 @@
 
   .modal-content
     padding: 25px 30px
+
+  .sorting-item
+    font-size: 14px
+    padding: 7px 12px
+    margin: 0 5px 5px 0
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 420px)

@@ -192,7 +192,57 @@
   .links-home {
     margin: 20px auto 0; }
   .wrapper-content .item {
-    width: 25%; } }
+    width: 25%; }
+  .availability-table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .availability-table thead {
+      display: none; }
+    .availability-table tr {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      border: solid 1px #d9d9d9;
+      margin: 0 0 10px; }
+      .availability-table tr:last-child {
+        margin: 0; }
+    .availability-table td {
+      width: 100%;
+      padding: 5px;
+      margin: 0 0 10px;
+      border: none;
+        border-bottom: solid 1px #d9d9d9;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      text-align: left; }
+      .availability-table td:before {
+        content: attr(data-table);
+        display: block;
+        width: 40%;
+        font-weight: bold; }
+      .availability-table td:last-child {
+        margin: 0;
+        border: none; }
+        .availability-table td:last-child:before {
+          display: none; }
+  .description-text {
+    max-width: none; }
+  .sorting-item {
+    padding: 7px 25px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -258,7 +308,11 @@
   .logo {
     max-width: 140px; }
   .modal-content {
-    padding: 25px 30px; } }
+    padding: 25px 30px; }
+  .sorting-item {
+    font-size: 14px;
+    padding: 7px 12px;
+    margin: 0 5px 5px 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
