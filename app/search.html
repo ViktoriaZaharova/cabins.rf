@@ -23,11 +23,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/catalog.css">
   <link rel="stylesheet" href="css/media.css">
 
 </head>
@@ -39,9 +41,9 @@
       <div class="col-12">
         <div class="header-top">
           <ul class="home-menu my-ul">
-            <li><a href="#">АКЦии и скидки</a></li>
-            <li><a href="#" class="color-red">скупка</a></li>
-            <li><a href="#">наличие</a></li>
+            <li><a href="sales.html">АКЦии и скидки</a></li>
+            <li><a href="buying.html" class="color-red">скупка</a></li>
+            <li><a href="availability.html">наличие</a></li>
           </ul>
           <p>Успей зафиксировать стоимость - поднятие цен в апреле</p>
           <a href="#" class="btn btn-border">зафиксировать</a>
@@ -104,10 +106,19 @@
               <a class="menu-item">Продукты</a>
               <ul class="dropdown-menu dropdown-menu-my">
                 <li>
-                  <a href="#">Блок-контейнеры</a>
+                  <a href="block-containers.html">Блок-контейнеры</a>
+                  <ul class="dropdown-submenu">
+                    <li><a href="#">Посты охраны</a></li>
+                    <li><a href="#">Блок контейнеры север</a></li>
+                    <li><a href="#">Блок контейнер сэндвич</a></li>
+                    <li><a href="#">Сантехнические</a></li>
+                    <li><a href="#">Сборно-разборные</a></li>
+                    <li><a href="#">Под оборудование</a></li>
+                    <li><a href="#">На шасси</a></li>
+                  </ul>
                 </li>
                 <li>
-                  <a href="#">Бытовки</a>
+                  <a href="change-houses.html">Бытовки</a>
                   <ul class="dropdown-submenu">
                     <li><a href="#">Металлические бытовки</a></li>
                     <li><a href="#">Бытовки сэндвич</a></li>
@@ -116,29 +127,131 @@
                 </li>
 
                 <li>
-                  <a href="#">Модульные здания</a>
+                  <a href="modular-buildings.html">Модульные здания</a>
+                  <ul class="dropdown-submenu">
+                    <li><a href="#">Модульные вахтовые городки</a></li>
+                    <li><a href="#">Модульные жилые здания</a></li>
+                    <li><a href="#">Модульные административные</a></li>
+                    <li><a href="#">Модульные строительные здания</a></li>
+                    <li><a href="#">Модульные здания под оборудование</a></li>
+                    <li><a href="#">Модульные пункты питания</a></li>
+                    <li><a href="#">Модульные бытовые здания</a></li>
+                    <li><a href="#">Модульные здания для бизнеса</a></li>
+                  </ul>
                 </li>
                 <li>
-                  <a href="#">Торговые павильоны</a>
+                  <a href="trade-pavilions.html">Торговые павильоны</a>
                 </li>
                 <li>
-                  <a href="#">Containex</a>
+                  <a href="containex.html">Containex</a>
+                  <ul class="dropdown-submenu">
+                    <li><a href="#">Блок контейнеры</a></li>
+                    <li><a href="#">Сантехнические</a></li>
+                    <li><a href="#">Модульные здания</a></li>
+                  </ul>
                 </li>
                 <li>
-                  <a href="#">Контейнеры</a>
+                  <a href="containers.html">Контейнеры</a>
+                  <ul class="dropdown-submenu">
+                    <li><a href="#">Морские контейнеры</a></li>
+                    <li><a href="#">Рефконтейнеры</a></li>
+                    <li><a href="#">Танк контейнеры</a></li>
+                    <li><a href="#">Спец контейнеры</a></li>
+                    <li><a href="#">Переделка контейнеров</a></li>
+                  </ul>
                 </li>
                 <li>
-                  <a href="#">дома</a>
+                  <a href="houses.html">дома</a>
+                  <ul class="dropdown-submenu">
+                    <li><a href="#">Дачные домики</a></li>
+                    <li><a href="#">Дома из бытовок</a></li>
+                    <li><a href="#">Деревянные дома</a></li>
+                    <li><a href="#">Дома из контейнеров</a></li>
+                  </ul>
                 </li>
                 <li>
-                  <a href="#">бани</a>
+                  <a href="baths.html">бани</a>
+                  <ul class="dropdown-submenu">
+                    <li><a href="#">Модульные бани</a></li>
+                    <li><a href="#">Деревянные бани</a></li>
+                    <li><a href="#">Бани бочки</a></li>
+                    <li><a href="#">Баня контейнер</a></li>
+                    <li><a href="#">Баня бытовка</a></li>
+                  </ul>
                 </li>
               </ul>
             </li>
-            <li><a href="services.html">услуги</a></li>
+            <li class="dropdown"><a href="#" class="menu-item">услуги</a>
+              <ul class="dropdown-menu dropdown-menu-my">
+                <li>
+                  <a href="delivery.html">Доставка</a>
+                </li>
+                <li>
+                  <a href="rent.html">Аренда</a>
+                </li>
+                <li>
+                  <a href="buying.html">Скупка и продажа б/у</a>
+                </li>
+                <li>
+                  <a href="repair.html">Ремонт бытовок</a>
+                </li>
+              </ul>
+            </li>
+
             <li><a href="useful.html">полезное</a></li>
-            <li><a href="objects.html">выполненные объекты</a></li>
-            <li><a href="about.html">компания</a></li>
+            <li class="dropdown"><a href="#" class="menu-item">выполненные объекты</a>
+              <ul class="dropdown-menu dropdown-menu-my">
+                <li>
+                  <a href="camps.html">Вахтовые поселки</a>
+                </li>
+                <li>
+                  <a href="module.html">Модульные здания</a>
+                </li>
+                <li>
+                  <a href="block-container.html">Блок-контейнеры</a>
+                </li>
+                <li>
+                  <a href="spec-container.html">Спец. контейнеры</a>
+                </li>
+                <li>
+                  <a href="conversion-container.html">Переоборудование контейнеров</a>
+                </li>
+                <li>
+                  <a href="guard-post.html">Посты охраны</a>
+                </li>
+                <li>
+                  <a href="pavilions.html">Павильоны</a>
+                </li>
+                <li>
+                  <a href="medical-module.html">Сантехнические модули</a>
+                </li>
+                <li>
+                  <a href="wooden-cabins.html">Деревянные бытовки</a>
+                </li>
+                <li>
+                  <a href="wooden-houses.html">Посты охраны</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="menu-item">компания</a>
+              <ul class="dropdown-menu dropdown-menu-my">
+                <li>
+                  <a href="production.html">Производство</a>
+                </li>
+                <li>
+                  <a href="development-dynamics.html">Динамика развития</a>
+                </li>
+                <li>
+                  <a href="our-team.html">Наша команда</a>
+                </li>
+                <li>
+                  <a href="certificates.html">Сертификаты</a>
+                </li>
+                <li>
+                  <a href="requisites.html">Реквизиты</a>
+                </li>
+              </ul>
+            </li>
             <li><a href="reviews.html">отзывы</a></li>
             <li><a href="contacts.html">контакты</a></li>
           </ul>
@@ -388,44 +501,65 @@
             <div class="footer-box">
               <h3>Продукты</h3>
               <ul class="footer-menu my-ul">
-                <li><a href="#">Блок-контейнеры</a></li>
-                <li><a href="#">Бытовки</a></li>
-                <li><a href="#">Модульные здания</a></li>
-                <li><a href="#">Containex</a></li>
-                <li><a href="#">Торговые павильоны</a></li>
-                <li><a href="#">Контейнеры</a></li>
-                <li><a href="#">Дома</a></li>
-                <li><a href="#">Бани</a></li>
+                <li><a href="block-containers.html">Блок-контейнеры</a></li>
+                <li><a href="change-houses.html">Бытовки</a></li>
+                <li><a href="modular-buildings.html">Модульные здания</a></li>
+                <li><a href="containex.html">Containex</a></li>
+                <li><a href="trade-pavilions.html">Торговые павильоны</a></li>
+                <li><a href="containers.html">Контейнеры</a></li>
+                <li><a href="houses.html">Дома</a></li>
+                <li><a href="baths.html">Бани</a></li>
               </ul>
             </div>
             <div class="footer-box">
               <h3>Услуги</h3>
               <ul class="footer-menu my-ul">
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Аренда</a></li>
-                <li><a href="#">Скупка и продажа б/у</a></li>
-                <li><a href="#">Ремонт бытовок</a></li>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li>
+                  <a href="rent.html">Аренда</a>
+                </li>
+                <li>
+                  <a href="buying.html">Скупка и продажа б/у</a>
+                </li>
+                <li>
+                  <a href="repair.html">Ремонт бытовок</a>
+                </li>
               </ul>
             </div>
             <div class="footer-box">
               <h3>Проекты</h3>
               <ul class="footer-menu my-ul">
-                <li><a href="#">Блок-контейнеры</a></li>
-                <li><a href="#">Модульные здания</a></li>
-                <li><a href="#">Переоборудованние</a></li>
-                <li><a href="#">Деревянные дома</a></li>
-                <li><a href="#">Посты охраны</a></li>
-                <li><a href="#">Торговые павильоны</a></li>
-                <li><a href="#">Спец. контейнеры</a></li>
+                <li>
+                  <a href="block-container.html">Блок-контейнеры</a>
+                </li>
+                <li>
+                  <a href="module.html">Модульные здания</a>
+                </li>
+                <li><a href="conversion-container.html">Переоборудование</a></li>
+                <li>
+                  <a href="wooden-cabins.html">Деревянные бытовки</a>
+                </li>
+                <li>
+                  <a href="wooden-houses.html">Посты охраны</a>
+                </li>
+                <li><a href="trade-pavilions.html">Торговые павильоны</a></li>
+                <li>
+                  <a href="spec-container.html">Спец. контейнеры</a>
+                </li>
               </ul>
+
             </div>
             <div class="footer-box">
               <h3>Компания</h3>
               <ul class="footer-menu my-ul">
-                <li><a href="#">Производство</a></li>
-                <li><a href="#">Динамика развития</a></li>
-                <li><a href="#">Наша команда</a></li>
-                <li><a href="#">Отзывы</a></li>
+                <li>
+                  <a href="production.html">Производство</a>
+                </li>
+                <li>
+                  <a href="development-dynamics.html">Динамика развития</a>
+                </li>
+                <li><a href="our-team.html">Наша команда</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
               </ul>
             </div>
             <div class="footer-box">
@@ -683,6 +817,7 @@
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="js/common.js"></script>
 
 </body>

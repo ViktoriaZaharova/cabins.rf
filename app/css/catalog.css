@@ -1,0 +1,17 @@
+/*==========  catalog  ==========*/
+.js-tab-content {
+  display: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
+  .js-tab-content.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.js-tab-trigger.active {
+  -webkit-box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.2);
+  border: solid 2px #00a4e5;
+  background-color: #fff; }
+
+/*==========  catalog end  ==========*/

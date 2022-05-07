@@ -198,6 +198,59 @@ button, .btn
     background: $yellow
     color: #000
 
+.btn-border-grey
+  background: #fff
+  padding: 0 45px
+  border: 1px solid #e8e8e8
+    radius: 0
+  text-transform: none
+  font-size: 18px
+  &:hover
+    background: $accent
+    color: #fff
+
+.btn-grey
+  background: #d9d9d9
+  padding: 0 30px
+  color: #222
+  font-size: 16px
+  border: none
+    radius: 3px
+  position: relative
+  overflow: hidden
+  z-index: 1
+  &:hover
+    color: #fffefe
+    box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.19)
+    &:before
+      width: 100%
+      left: 0
+  &:before
+    content: ''
+    position: absolute
+    left: -4px
+    top: 0
+    width: 0
+    height: 100%
+    transition: .3s ease
+    z-index: -1
+    background-image: linear-gradient(to left, #00a3e2, #0981b0), linear-gradient(to top, #00a3e2, #039ad4)
+    border-image-source: linear-gradient(to left, #00a3e2, #039ad4)
+    border-image-slice: 1
+    background-origin: border-box
+    background-clip: content-box, border-box
+    border:
+      width: 2px
+      style: solid
+      radius: 3px
+
+
+
+.btn-md
+  height: 45px
+
+.btn-toggle
+  margin: 14px auto 0
 
 .svg-icon
   display: inline-block
@@ -271,6 +324,9 @@ a.color-grey
 .mb-15
   margin-bottom: 15px
 
+.mb-18
+  margin-bottom: 18px
+
 h1
   font-size: 32px
   text-transform: uppercase
@@ -320,3 +376,33 @@ h2
 
 .breadcrumb-item.active
   color: #222222
+
+.wrapper-content
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 -9px
+  .item
+    width: 20%
+    padding: 0 9px
+
+.sorting-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.sorting-item
+  text-align: center
+  background: #e8e8e8
+  border-radius: 2px
+  margin: 0 12px 12px 0
+  padding: 7px 37px
+  color: #222
+  &:hover
+    color: $accent
+  &.active
+    background: $accent
+    color: #fff
+
+

@@ -82,3 +82,29 @@ $('.btn-burger').on('click', function(e){
     }
 });
 
+
+// показать карточку товара по наведению в зависимости от значениея data-tab
+$(document).ready(function () {
+    $(".js-tab-trigger").hover(function () {
+        var id = $(this).attr('data-tab'),
+            content = $('.js-tab-content[data-tab="'+ id +'"]');
+
+        $('.js-tab-trigger.active').removeClass('active'); // 1
+        $(this).addClass('active'); // 2
+
+        $('.js-tab-content.active').removeClass('active'); // 3
+        content.addClass('active'); // 4
+    })
+});
+
+
+// show block all
+$('.btn-toggle').on('click', function (e) {
+    e.preventDefault();
+    $('.certificate-wrapper-content .item:hidden').slice(0, 10).slideDown();
+
+    var onBlock = $('.certificate-wrapper-content .item:hidden').length;
+    if(onBlock <= 0) {
+        $('.btn-toggle').hide();
+    }
+});
