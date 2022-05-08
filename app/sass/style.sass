@@ -245,12 +245,14 @@ button, .btn
       radius: 3px
 
 
-
 .btn-md
   height: 45px
 
 .btn-toggle
   margin: 14px auto 0
+  max-width: 202px
+  width: 100%
+  padding: 0
 
 .svg-icon
   display: inline-block
@@ -261,8 +263,12 @@ strong, b
   font-weight: bold
   display: inline-block
 
+ul
+  padding-left: 40px
+
 .my-ul
   list-style: none
+  padding: 0
 
 .container
   max-width: 1230px
@@ -326,6 +332,15 @@ a.color-grey
 
 .mb-18
   margin-bottom: 18px
+
+.mb-24
+  margin-bottom: 24px
+
+.mb-30
+  margin-bottom: 30px
+
+.mb-100
+  margin-bottom: 100px
 
 h1
   font-size: 32px
@@ -391,6 +406,7 @@ h2
   display: flex
   align-items: flex-start
   flex-wrap: wrap
+  margin: 0 0 30px
 
 .sorting-item
   text-align: center
@@ -405,4 +421,40 @@ h2
     background: $accent
     color: #fff
 
+.nav-pagination
+  width: 100%
+  margin: 24px auto 0
 
+.pagination
+  margin: 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  border: none
+    radius: 0
+  font-size: 18px
+  .page-link
+    border: none
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #222
+    width: 40px
+    height: 40px
+    background: #e8e8e8
+    &:hover
+      background: $accent
+      color: #fff
+  .page-item
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+    &.active
+      .page-link
+        background: $accent
+        color: #fff
+
+.page-item:first-child .page-link, .page-item:last-child .page-link
+  border-radius: 0

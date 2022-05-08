@@ -271,7 +271,10 @@ button, .btn {
   height: 45px; }
 
 .btn-toggle {
-  margin: 14px auto 0; }
+  margin: 14px auto 0;
+  max-width: 202px;
+  width: 100%;
+  padding: 0; }
 
 .svg-icon {
   display: inline-block;
@@ -282,8 +285,12 @@ strong, b {
   font-weight: bold;
   display: inline-block; }
 
+ul {
+  padding-left: 40px; }
+
 .my-ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
 
 .container {
   max-width: 1230px; }
@@ -351,6 +358,15 @@ a.color-grey:hover {
 
 .mb-18 {
   margin-bottom: 18px; }
+
+.mb-24 {
+  margin-bottom: 24px; }
+
+.mb-30 {
+  margin-bottom: 30px; }
+
+.mb-100 {
+  margin-bottom: 100px; }
 
 h1 {
   font-size: 32px;
@@ -435,7 +451,8 @@ h2 {
       -ms-flex-align: start;
           align-items: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin: 0 0 30px; }
 
 .sorting-item {
   text-align: center;
@@ -449,3 +466,53 @@ h2 {
   .sorting-item.active {
     background: #00a4e5;
     color: #fff; }
+
+.nav-pagination {
+  width: 100%;
+  margin: 24px auto 0; }
+
+.pagination {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: none;
+    border-radius: 0;
+  font-size: 18px; }
+  .pagination .page-link {
+    border: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #222;
+    width: 40px;
+    height: 40px;
+    background: #e8e8e8; }
+    .pagination .page-link:hover {
+      background: #00a4e5;
+      color: #fff; }
+  .pagination .page-item {
+    margin: 0 10px 0 0; }
+    .pagination .page-item:last-child {
+      margin: 0; }
+    .pagination .page-item.active .page-link {
+      background: #00a4e5;
+      color: #fff; }
+
+.page-item:first-child .page-link, .page-item:last-child .page-link {
+  border-radius: 0; }

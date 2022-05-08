@@ -99,12 +99,23 @@ $(document).ready(function () {
 
 
 // show block all
-$('.btn-toggle').on('click', function (e) {
+$('.certificates .btn-toggle').on('click', function (e) {
     e.preventDefault();
-    $('.certificate-wrapper-content .item:hidden').slice(0, 10).slideDown();
+    $(this).prev('.certificate-wrapper-content').find('.item:hidden').slice(0, 5).slideDown();
 
-    var onBlock = $('.certificate-wrapper-content .item:hidden').length;
+    var onBlock = $(this).prev('.certificate-wrapper-content').find('.item:hidden').length;
     if(onBlock <= 0) {
-        $('.btn-toggle').hide();
+        $(this).hide();
+    }
+});
+
+
+$('.video-reviews-wrapper .btn-toggle').on('click', function (e) {
+    e.preventDefault();
+    $(this).parents('.video-reviews-wrapper').find('.video-reviews-col:hidden').slice(0, 2).slideDown();
+
+    var onBlock = $(this).parents('.video-reviews-wrapper').find('.video-reviews-col:hidden').length;
+    if(onBlock <= 0) {
+        $(this).hide();
     }
 });
