@@ -95,6 +95,26 @@ input, textarea, select {
     -webkit-box-shadow: none;
             box-shadow: none; }
 
+.select {
+  border: none;
+  padding: 0 20px;
+  cursor: pointer; }
+
+.form-consultation label {
+  margin: 0 0 30px; }
+
+.form-consultation input {
+  border: none; }
+
+.form-consultation button {
+  max-width: 345px;
+  margin: 0 auto; }
+
+.form-consultation .checkbox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 label {
   display: block;
   width: 100%;
@@ -288,6 +308,9 @@ strong, b {
 ul {
   padding-left: 40px; }
 
+ol {
+  padding-left: 20px; }
+
 .my-ul {
   list-style: none;
   padding: 0; }
@@ -352,6 +375,10 @@ a.color-grey:hover {
 .box-text {
   font-size: 18px;
   line-height: 1.67; }
+  .box-text p {
+    margin: 0 0 30px; }
+    .box-text p:last-child {
+      margin: 0; }
 
 .mb-15 {
   margin-bottom: 15px; }
@@ -397,9 +424,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
   .breadcrumb-item a {
     color: #00a4e5; }
     .breadcrumb-item a:hover {
@@ -410,7 +437,7 @@ h2 {
   .breadcrumb-item + .breadcrumb-item:before {
     content: '\f054';
     padding: 0;
-    margin: 0 5px;
+    margin: 5px 5px 0;
     color: #222;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -516,3 +543,7 @@ h2 {
 
 .page-item:first-child .page-link, .page-item:last-child .page-link {
   border-radius: 0; }
+
+.links-print {
+  font-size: 18px;
+  margin: 0 0 8px auto; }

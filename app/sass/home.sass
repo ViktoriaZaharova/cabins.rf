@@ -543,13 +543,400 @@
 
 
 
-/*==========  certificates  ==========*/
-/*==========  certificates end  ==========*/
+/*==========  delivery  ==========*/
+.nav-tabs
+  justify-content: center
+  margin: 0 0 30px
+  border-bottom: 1px solid #e7e7e7
+  font-size: 20px
+  .nav-link
+    color: #222
+    padding: 0 70px 6px
+    border: none
+      radius: 0
+    position: relative
+    margin-bottom: -2px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      height: 3px
+      background: $accent
+      transition: .3s ease
+    &.active
+      background: transparent
+      color: #222
+      &:before
+        width: 100%
+
+.delivery-page
+  .tab-content
+    color: #666
+    font-size: 18px
+    .box-text
+      margin: 0 0 30px
+
+    h2
+      color: #222
+      margin: 0 0 30px
+    span
+      margin: 20px 0 0
+      display: block
+
+.map-wrapper
+  width: 100%
+  margin: 27px 0 0
+
+/*==========  delivery end  ==========*/
+
+
+/*==========  services page  ==========*/
+.services-box
+  width: 100%
+  height: 100%
+  color: #222
+  font-size: 18px
+  text-align: center
+  background: #f6f6f6
+  border: 2px solid transparent
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 180px
+    width: 100%
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    display: block
+    width: 100%
+    padding: 18px 10px
+  &:hover
+    box-shadow: 0px 10px 21px 0 rgba(0, 0, 0, 0.2)
+    border: solid 2px #00a4e5
+    color: $accent
+    background: #fff
+/*==========  services page end  ==========*/
+
+
+/*==========  contacts page  ==========*/
+.contacts-wrapper
+  margin: 0 0 60px
+  width: 100%
+  border: solid 5px rgba(#e8e8e8, .4)
+  background: #fff
+  padding: 30px 70px
+
+.contacts-box
+  text-align: center
+  font-size: 18px
+  color: #999999
+  a
+    color: #242424
+    font-size: 22px
+    margin: 10px auto 0
+    &:hover
+      color: $accent
+  &__icon
+    margin: 0 auto 18px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      max-width: 26px
+      margin: 0 18px 0 0
+      &:last-child
+        margin: 0
+  .list-subscribe-social
+    margin: 17px 0 0
+    li
+      margin: 0 7px 0 0
+
+    a
+      font-size: 14px
+      width: 33px
+      height: 33px
+      min-width: 33px
+      margin: 0
+  h3
+    font-size: 22px
+    color: #222
+
+.contacts-employees
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-around
+  flex-wrap: wrap
+
+.employees-box
+  display: flex
+  align-items: center
+  margin: 0 0 30px
+  &__photo
+    display: flex
+    align-items: center
+    overflow: hidden
+    border-radius: 50%
+    width: 165px
+    height: 165px
+  &__body
+    width: calc(100% - 165px)
+    padding: 0 0 0 28px
+  .position
+    font-size: 24px
+    color: #222
+  .name
+    margin: 10px 0 22px
+    font-size: 18px
+    color: #666
+  &-links
+    display: flex
+    align-items: center
+    color: #666
+    &:hover
+      color: $accent
+    &__icon
+      display: flex
+      align-items: center
+      max-width: 20px
+      min-width: 20px
+      margin: 0 7px 0 0
+
+.branches
+  margin: 70px 0 88px
+
+.branches-box
+  margin: 0 0 50px
+  color: #666
+  font-size: 18px
+  &__city
+    margin: 0 0 10px
+    color: #222
+    font-size: 24px
+  a.branches-box__city
+    color: $accent
+    text-decoration: underline
+  &__phone
+    color: #222
+    margin: 15px 0 0
+    &:hover
+      color: $accent
+
+.consultation
+  h2
+    margin: 0
+    padding: 14px 0
+    text-align: center
+    background: #00a4e5
+    color: #fff
+    text-transform: none
+    border-radius: 3px 3px 0 0
+  .box-text
+    text-align: center
+    margin: 0 auto 40px
+
+.consultation-body
+  color: #fff
+  padding: 45px 53px
+  background: #343b42
+  border-radius: 0 0 3px 3px
+
+
+.map-city
+  width: 100%
+  min-height: 650px
+
+.scheme-contacts
+  margin: 0 0 0 auto
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+.contacts-page-city
+  .box-text
+    color: #666
+/*==========  contacts page end  ==========*/
+
+/*==========  repair page  ==========*/
+.repair-page
+  .box-text
+    color: #666
+
+.consultation-wrapper
+  border-radius: 3px
+  margin: 0 auto 45px
+  overflow: hidden
+  max-width: 862px
+  width: 100%
+  .form-consultation
+    label
+      max-width: 368px
+      margin: 0 auto 30px
+    .checkbox
+      justify-content: flex-start
+    button
+      max-width: 368px
+
+.consultation-header
+  width: 100%
+  background: $accent
+  line-height: 1
+  color: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 24px
+  padding: 14px
+  img
+    margin: 0 10px 0 0
+
+.repair-section
+  margin: 70px 0
+  .box-text
+    color: #666
+/*==========  repair page end  ==========*/
+
+
+/*==========  useful-page  ==========*/
+
+.useful-box
+  width: 100%
+  margin: 0 0 30px
+  padding: 0 0 30px
+  border-bottom: 3px solid #e8e8e8
+  color: #666
+  &__footer
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 27px 0 0
+  &__body
+    width: 100%
+    padding: 20px 0 0
+  .date
+    display: flex
+    align-items: center
+    color: $accent
+    font-size: 17px
+    margin: 0 0 20px
+    &-icon
+      margin: 0 9px 0 0
+      display: flex
+      align-items: center
+  &__img
+    width: 100%
+    position: relative
+  &__title
+    position: absolute
+    font-size: 30px
+    background: #fff
+    z-index: 1
+    color: #222
+    padding: 12px 16px
+    left: 0
+    top: 63px
+
+.share
+  display: flex
+  align-items: center
+  p
+    margin: 0 9px 0 0
+
+.menu-right
+  width: 100%
+  &__title
+    font-size: 24px
+    margin: 0 0 20px
+  ul
+    color: #666
+    line-height: 1.25
+    padding: 0 0 0 20px
+    margin: 0 0 30px
+    li
+      margin: 0 0 12px
+      a
+        color: #666
+        &:hover
+          color: $accent
+  .tags-list
+    padding: 0
+    margin: 0
+    line-height: normal
+    li
+      margin: 0 7px 7px 0
+
+      a
+        color: #222
+  .consultation-wrapper
+    margin: 43px 0 0
+  .consultation-header
+    padding: 14px 24px
+  .consultation-body
+    padding: 30px 24px
+  .form-consultation
+    label
+      margin: 0 0 16px
+
+
+.tags-list
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  padding: 0
+  font-size: 17px
+  li
+    margin: 0 7px 7px 0
+    a
+      padding: 5px 14px
+      background: #e8e8e8
+      color: #222
+
+.table-buying
+  font-size: 21px
+  border: none
+  margin: 0 0 45px
+  tr
+    border-bottom: 1px solid $accent
+    &:last-child
+      border: none
+  td
+    vertical-align: top
+    padding: 19px 15px
+    border: none
+      right: 1px solid $accent
+    &:last-child
+      border: none
+  ol
+    text-align: left
+    img
+      margin: 0 5px -4px 3px
+      display: inline-block
+  .stage
+    p
+      text-transform: uppercase
+      text-align: center
+      font-size: 40px
+      font-weight: bold
+      color: #009fe4
+      flex-flow: $font
+  img
+    margin: 0 auto 14px
+
+/*==========  useful-page end  ==========*/
 
 
 /*==========  certificates  ==========*/
 /*==========  certificates end  ==========*/
 
+
+/*==========  certificates  ==========*/
+/*==========  certificates end  ==========*/
 
 /*==========  certificates  ==========*/
 /*==========  certificates end  ==========*/

@@ -87,6 +87,22 @@ input, textarea, select
     outline: none
     box-shadow: none
   
+.select
+  border: none
+  padding: 0 20px
+  cursor: pointer
+
+.form-consultation
+  label
+    margin: 0 0 30px
+  input
+    border: none
+  button
+    max-width: 345px
+    margin: 0 auto
+  .checkbox
+    justify-content: center
+
 
 label
   display: block
@@ -266,6 +282,9 @@ strong, b
 ul
   padding-left: 40px
 
+ol
+  padding-left: 20px
+
 .my-ul
   list-style: none
   padding: 0
@@ -326,6 +345,10 @@ a.color-grey
 .box-text
   font-size: 18px
   line-height: 1.67
+  p
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
 
 .mb-15
   margin-bottom: 15px
@@ -369,7 +392,7 @@ h2
 
 .breadcrumb-item
   display: flex
-  align-items: center
+  align-items: flex-start
   a
     color: $accent
     &:hover
@@ -380,7 +403,7 @@ h2
   &:before
     content: '\f054'
     padding: 0
-    margin: 0 5px
+    margin: 5px 5px 0
     color: #222
     font-family: "Font Awesome 5 Free"
     font-weight: 900
@@ -458,3 +481,7 @@ h2
 
 .page-item:first-child .page-link, .page-item:last-child .page-link
   border-radius: 0
+
+.links-print
+  font-size: 18px
+  margin: 0 0 8px auto
