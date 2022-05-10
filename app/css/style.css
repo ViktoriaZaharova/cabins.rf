@@ -40,7 +40,7 @@ body {
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: normal;
   background: #fff;
-  color: #222; }
+  color: #666; }
 
 html, body {
   overflow-x: hidden; }
@@ -376,7 +376,7 @@ a.color-grey:hover {
   font-size: 18px;
   line-height: 1.67; }
   .box-text p {
-    margin: 0 0 30px; }
+    margin: 0 0 25px; }
     .box-text p:last-child {
       margin: 0; }
 
@@ -406,6 +406,9 @@ h2 {
   text-transform: uppercase;
   margin: 0 0 27px;
   font-size: 24px; }
+
+h1, h2, h3, h4, h5, h6, table tr th, table tr td {
+  color: #222; }
 
 .breadcrumb-nav {
   width: 100%;

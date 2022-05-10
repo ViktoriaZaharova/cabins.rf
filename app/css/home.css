@@ -40,11 +40,6 @@
       -ms-flex-align: center;
           align-items: center; }
 
-.home-content {
-  color: #666; }
-  .home-content h2, .home-content h1 {
-    color: #222; }
-
 .order-cabins h1 {
   text-align: center; }
 
@@ -404,7 +399,6 @@
   vertical-align: middle; }
 
 .table thead {
-  color: #666;
   border: none; }
   .table thead th {
     border: solid 1px #d9d9d9;
@@ -506,9 +500,6 @@
 
 /*==========  reviews-page page end  ==========*/
 /*==========  our-team-page  ==========*/
-.our-team-page .box-text {
-  color: #666; }
-
 .our-team-page ul {
   margin: 30px 0 0; }
 
@@ -600,7 +591,6 @@
     line-height: 1.2; }
 
 .company-faces .box-text {
-  color: #666;
   margin: 0 0 37px; }
 
 /*==========  our-team-page end  ==========*/
@@ -635,7 +625,6 @@
         width: 100%; }
 
 .delivery-page .tab-content {
-  color: #666;
   font-size: 18px; }
   .delivery-page .tab-content .box-text {
     margin: 0 0 30px; }
@@ -777,8 +766,7 @@
     color: #222; }
   .employees-box .name {
     margin: 10px 0 22px;
-    font-size: 18px;
-    color: #666; }
+    font-size: 18px; }
   .employees-box-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -805,7 +793,6 @@
 
 .branches-box {
   margin: 0 0 50px;
-  color: #666;
   font-size: 18px; }
   .branches-box__city {
     margin: 0 0 10px;
@@ -855,14 +842,8 @@
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
-.contacts-page-city .box-text {
-  color: #666; }
-
 /*==========  contacts page end  ==========*/
 /*==========  repair page  ==========*/
-.repair-page .box-text {
-  color: #666; }
-
 .consultation-wrapper {
   border-radius: 3px;
   margin: 0 auto 45px;
@@ -900,8 +881,6 @@
 
 .repair-section {
   margin: 70px 0; }
-  .repair-section .box-text {
-    color: #666; }
 
 /*==========  repair page end  ==========*/
 /*==========  useful-page  ==========*/
@@ -909,8 +888,7 @@
   width: 100%;
   margin: 0 0 30px;
   padding: 0 0 30px;
-  border-bottom: 3px solid #e8e8e8;
-  color: #666; }
+  border-bottom: 3px solid #e8e8e8; }
   .useful-box__footer {
     width: 100%;
     display: -webkit-box;
@@ -975,7 +953,6 @@
     font-size: 24px;
     margin: 0 0 20px; }
   .menu-right ul {
-    color: #666;
     line-height: 1.25;
     padding: 0 0 0 20px;
     margin: 0 0 30px; }
@@ -1054,8 +1031,183 @@
     margin: 0 auto 14px; }
 
 /*==========  useful-page end  ==========*/
-/*==========  certificates  ==========*/
-/*==========  certificates end  ==========*/
+/*==========  company page  ==========*/
+.company-page .box-text {
+  line-height: 1.33; }
+  .company-page .box-text strong {
+    color: #222; }
+
+.company-photo img {
+  width: 100%; }
+
+.company-state {
+  margin: 70px 0;
+  width: 100%; }
+
+.company-state-box {
+  width: 100%;
+  margin: 0 0 70px; }
+  .company-state-box:last-child {
+    margin: 0; }
+  .company-state-box__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #222; }
+    .company-state-box__title img {
+      margin: 0 12px 0 0;
+      max-width: 37px; }
+
+.company-state-list li {
+  position: relative;
+  margin: 0 0 25px;
+  padding: 0 0 0 50px;
+  line-height: 30px; }
+  .company-state-list li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 39px;
+    height: 40px; }
+  .company-state-list li:last-child {
+    margin: 0; }
+
+.workshop:before {
+  background: url("../img/workshop.svg") no-repeat center;
+    background-size: 100%; }
+
+.construction-and-tools:before {
+  background: url("../img/construction-and-tools.svg") no-repeat center;
+    background-size: 100%; }
+
+.wood:before {
+  background: url("../img/wood.svg") no-repeat center;
+    background-size: 100%; }
+
+.machine:before {
+  background: url("../img/machine.svg") no-repeat center;
+    background-size: 100%; }
+
+.factory:before {
+  background: url("../img/factory.svg") no-repeat center;
+    background-size: 100%; }
+
+.builder:before {
+  background: url("../img/builder.svg") no-repeat center;
+    background-size: 100%; }
+
+.truck:before {
+  background: url("../img/truck.svg") no-repeat center;
+    background-size: 100%; }
+
+.list-check li {
+  margin: 0 0 20px;
+  position: relative;
+  padding: 0 0 0 25px; }
+  .list-check li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 15px;
+    height: 11px;
+    background: url("../img/check-symbol.svg") no-repeat center;
+      background-size: 100%; }
+
+.company-faces-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.company-faces-item {
+  text-align: center;
+  width: 25%;
+  margin: 0 0 70px;
+  font-size: 14px;
+  color: #222;
+  line-height: 1.43; }
+  .company-faces-item__photo {
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    width: 164px;
+    height: 164px;
+    margin: 19px auto 0;
+    background: rgba(224, 224, 224, 0.61); }
+
+.company-state-faces {
+  margin-bottom: 0; }
+
+.company-state-history {
+  margin: 0; }
+
+.list-history {
+  position: relative;
+  padding: 5px 0; }
+  .list-history:before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: #e1edf2;
+    border-radius: 2px; }
+  .list-history li {
+    position: relative;
+    padding: 0 0 0 30px;
+    margin: 0 0 20px; }
+    .list-history li:last-child {
+      margin: 0; }
+    .list-history li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #008cba; }
+
+.logo-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 20px; }
+
+/*==========  company page end  ==========*/
 /*==========  certificates  ==========*/
 /*==========  certificates end  ==========*/
 /*==========  certificates  ==========*/
