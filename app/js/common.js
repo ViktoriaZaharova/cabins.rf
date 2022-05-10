@@ -33,6 +33,13 @@ $('.home-slider').slick({
     nextArrow: '<button type="button" class="slick-next"></button>'
 });
 
+$('.production-slider').slick({
+    slidesToShow: 1,
+    fade: true,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>'
+});
+
 $(window).scroll(function () {
     if ($(this).scrollTop() > 52) {
         $('header').addClass('fixed');

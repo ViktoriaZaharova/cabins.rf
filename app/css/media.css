@@ -99,7 +99,9 @@
   .menu-right {
     margin: 0 0 30px; }
     .menu-right .consultation-wrapper {
-      margin: 30px 0 0; } }
+      margin: 30px 0 0; }
+  .why-company-box {
+    width: 25%; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -309,7 +311,11 @@
       font-size: 30px; }
   .company-faces-item {
     width: 33.3%;
-    margin: 0 0 40px; } }
+    margin: 0 0 40px; }
+  .why-company {
+    margin: 30px 0 50px; }
+  .why-company-box {
+    width: 33.3%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -401,7 +407,9 @@
   .company-faces-item {
     width: 50%; }
   .company-photo {
-    margin: 0 0 20px; } }
+    margin: 0 0 20px; }
+  .why-company-box {
+    width: 50%; } }
 
 @media only screen and (max-width: 480px) {
   .clients h3 {
@@ -478,4 +486,6 @@
             align-items: center;
     text-align: center; }
   .form-subscribe button {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .why-company-box {
+    width: 100%; } }
