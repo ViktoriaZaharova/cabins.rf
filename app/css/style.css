@@ -401,7 +401,7 @@ h1 {
   font-size: 32px;
   text-transform: uppercase;
   width: 100%;
-  margin: 0 0 30px; }
+  margin: 0 0 40px; }
 
 h2 {
   width: 100%;
@@ -412,6 +412,9 @@ h2 {
 h1, h2, h3, h4, h5, h6, table tr th, table tr td {
   color: #222;
   line-height: normal; }
+
+.links-all {
+  font-size: 24px; }
 
 .breadcrumb-nav {
   width: 100%;
@@ -553,3 +556,10 @@ h1, h2, h3, h4, h5, h6, table tr th, table tr td {
 .links-print {
   font-size: 18px;
   margin: 0 0 8px auto; }
+
+.title-decor {
+  text-transform: none;
+  border-left: 6px solid #8ad5f1;
+  padding: 0 0 0 12px;
+  line-height: 1.25;
+  margin: 0 0 56px; }
