@@ -164,3 +164,10 @@ $(".go_to").on("click", function (event) {
     //анимируем переход на расстояние - top за 500 мс
     $('body,html').animate({scrollTop: top - header - 10}, 500);
 });
+
+$('.list-options').each(function () {
+    $(this).find('li').click(function () {
+        $(this).parent().find('li').removeClass('active');
+        $(this).addClass('active');
+    });
+});
