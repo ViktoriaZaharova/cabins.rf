@@ -387,7 +387,11 @@
     margin: 0 auto 20px; }
   .filter-category-item {
     width: 100%;
-    margin: 0; } }
+    margin: 0; }
+  .category-card-md .category-card-price {
+    width: 100%; }
+  .category-card-md .btn-order-product {
+    margin: 10px auto 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -493,7 +497,9 @@
   .consultation-box .consultation-header h3 {
     font-size: 22px; }
   .category-card {
-    padding: 20px; } }
+    padding: 20px; }
+  .category-card-md .btn-order-product {
+    width: 100%; } }
 
 @media only screen and (max-width: 480px) {
   .clients h3 {

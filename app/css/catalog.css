@@ -716,7 +716,7 @@ sup {
   width: 100%;
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  padding: 20px 20px 24px;
+  padding: 18px 14px;
   border: 2px solid transparent;
   background: #fff;
   z-index: 1; }
@@ -774,10 +774,21 @@ sup {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+  .category-card__body .row {
+    margin: 0; }
+  .category-card__body .col-12 {
+    padding: 0; }
 
 .btn-order-product {
   max-width: 256px;
   width: 100%; }
+
+.category-card-md .btn-order-product {
+  max-width: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 25px; }
 
 .category-card-price {
   display: -webkit-box;
@@ -903,6 +914,8 @@ sup {
     text-transform: uppercase;
     font-size: 18px; }
   .consultation-box .form-consultation label {
+    max-width: none;
+    width: 100%;
     margin: 0 0 14px; }
   .consultation-box .form-consultation .checkbox {
     font-size: 15px;
@@ -998,5 +1011,5 @@ sup {
   line-height: 1; }
 
 /*==========  category page end  ==========*/
-/*==========  certificates  ==========*/
-/*==========  certificates end  ==========*/
+/*==========  rent page  ==========*/
+/*==========  rent page end  ==========*/
