@@ -304,6 +304,10 @@ button, .btn {
     border-style: solid;
     border-radius: 3px; }
 
+.btn-sm {
+  height: 36px;
+  font-size: 14px; }
+
 .btn-md {
   height: 45px; }
 
@@ -352,6 +356,9 @@ a.color-accent:hover {
 
 a.color-grey:hover {
   color: #00a4e5; }
+
+.color-green {
+  color: #7fe441; }
 
 .border-dotted {
   border-bottom: 1px dotted #666; }

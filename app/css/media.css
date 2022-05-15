@@ -123,7 +123,27 @@
   .characteristics-product-total {
     position: relative; }
   .characteristics-product-wrapper {
-    padding: 11px 0 0; } }
+    padding: 11px 0 0; }
+  .tab-content-equipment {
+    max-height: none;
+    overflow-y: visible; }
+    .tab-content-equipment .nav-tabs-products-equipment__links {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .tab-content-equipment .tab-pane {
+      -webkit-transition: none;
+      transition: none;
+      max-height: 908px;
+      overflow-y: auto; }
+    .tab-content-equipment .tab-pane.active {
+      display: none; }
+    .tab-content-equipment .tab-pane.show {
+      display: block; }
+  .btn-order-product {
+    max-width: 200px; }
+  .projects-text {
+    margin: 0 0 40px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -364,7 +384,10 @@
   .nav-tabs-products-equipment .nav-link {
     margin: 0; }
   .product-description .certificate-item {
-    margin: 0 auto 20px; } }
+    margin: 0 auto 20px; }
+  .filter-category-item {
+    width: 100%;
+    margin: 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -464,7 +487,13 @@
   .dynamic-history-box p {
     max-width: none; }
   .btn-to-order {
-    padding: 0; } }
+    padding: 0; }
+  .consultation-box .consultation-body {
+    padding: 0 30px 30px; }
+  .consultation-box .consultation-header h3 {
+    font-size: 22px; }
+  .category-card {
+    padding: 20px; } }
 
 @media only screen and (max-width: 480px) {
   .clients h3 {
@@ -543,7 +572,17 @@
   h1 {
     font-size: 24px; }
   .company-faces-item {
-    width: 100%; } }
+    width: 100%; }
+  .btn-order-product {
+    max-width: none;
+    width: 100%;
+    margin: 10px auto 0; }
+  .category-card-slider-image {
+    margin: 20px auto; }
+  .category-card-slider-image__item {
+    height: auto; }
+  .category-card__title {
+    font-size: 20px; } }
 
 @media only screen and (max-width: 360px) {
   .footer-box {
@@ -560,4 +599,6 @@
   .form-subscribe button {
     font-size: 13px; }
   .why-company-box {
-    width: 100%; } }
+    width: 100%; }
+  .projects-slider__item {
+    width: 240px; } }

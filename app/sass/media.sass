@@ -170,6 +170,26 @@
   .characteristics-product-wrapper
     padding: 11px 0 0
 
+  .tab-content-equipment
+    max-height: none
+    overflow-y: visible
+    .nav-tabs-products-equipment__links
+      display: flex
+    .tab-pane
+      transition: none
+      max-height: 908px
+      overflow-y: auto
+    .tab-pane.active
+      display: none
+    .tab-pane.show
+      display: block
+
+  .btn-order-product
+    max-width: 200px
+
+  .projects-text
+    margin: 0 0 40px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   .form-subscribe
@@ -442,6 +462,10 @@
   .product-description .certificate-item
     margin: 0 auto 20px
 
+  .filter-category-item
+    width: 100%
+    margin: 0
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
   .footer-box
@@ -577,6 +601,15 @@
   .btn-to-order
     padding: 0
 
+  .consultation-box .consultation-body
+    padding: 0 30px 30px
+
+  .consultation-box .consultation-header h3
+    font-size: 22px
+
+  .category-card
+    padding: 20px
+
 @media only screen and (max-width : 480px)
   .clients h3
     font-size: 20px
@@ -678,6 +711,20 @@
   .company-faces-item
     width: 100%
 
+  .btn-order-product
+    max-width: none
+    width: 100%
+    margin: 10px auto 0
+
+  .category-card-slider-image
+    margin: 20px auto
+
+  .category-card-slider-image__item
+    height: auto
+
+  .category-card__title
+    font-size: 20px
+
 
 @media only screen and (max-width : 360px)
   .footer-box
@@ -694,3 +741,6 @@
 
   .why-company-box
     width: 100%
+
+  .projects-slider__item
+    width: 240px

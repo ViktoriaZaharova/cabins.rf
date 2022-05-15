@@ -82,23 +82,25 @@
 .object-gallery-preview
   width: 100%
   padding: 0 28px
-  .slick-arrow
-    width: 16px
-    height: 25px
-    &:hover
-      opacity: .7
-
-  .slick-prev
-    background: url("../img/left-arrow.svg") no-repeat center
-      size: 100%
-    left: 0
-  .slick-next
-    background: url("../img/right-arrow.svg") no-repeat center
-      size: 100%
-    right: 0
   .slide
     padding: 0 8px
     cursor: pointer
+
+
+.slick-prev-blue, .slick-next-blue
+  width: 16px
+  height: 25px
+  &:hover
+    opacity: .7
+
+.slick-prev-blue
+  background: url("../img/left-arrow.svg") no-repeat center
+    size: 100%
+  left: 0
+.slick-next-blue
+  background: url("../img/right-arrow.svg") no-repeat center
+    size: 100%
+  right: 0
 
 
 .object-gallery-preview__item
@@ -221,7 +223,7 @@ sup
     width: calc(50% - 10px)
 
 .product-information-box
-  margin: 20px 0 0
+  margin: 15px 0 0
   &__title
     margin: 0 0 15px
     font-size: 20px
@@ -445,6 +447,8 @@ sup
 .tab-content-equipment
   max-height: 908px
   overflow-y: auto
+  .nav-tabs-products-equipment__links
+    display: none
 
 .table-equipment
   border: none
@@ -484,10 +488,370 @@ sup
       border: solid 1px #dedede
       color: #222
 
+.nav-tabs-products-equipment__links
+  display: flex
+  align-items: center
+  width: 100%
+  padding: 11px 21px
+  text-transform: uppercase
+  border: 1px solid transparent
+  margin: 0 0 10px
+  color: #222
+  &:hover
+    border-color: #dedede
+    color: #222
+  .nav-link__icon
+    max-width: 40px
+    min-width: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 10px 0 0
+  &.active
+    border: solid 1px #dedede
+    color: #222
+
 /*==========  product page end  ==========*/
 
-/*==========  object page  ==========*/
-/*==========  object page end  ==========*/
+/*==========  category page  ==========*/
+.category-page
+  .nav-pagination
+    margin: 24px auto 48px
+
+.category-wrapper-sub
+  justify-content: center
+
+.category-item-sub
+  .category-item__img
+    height: 135px
+
+.form-catalog-filter
+  width: 100%
+  margin: 0 0 18px
+
+.filter-category
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.filter-category-item
+  border: solid 1px #e8e8e8
+  background: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  text-transform: uppercase
+  padding: 10px 30px
+  margin: 0 3px 0 0
+  font-size: 14px
+  line-height: 1
+  color: #666
+  cursor: pointer
+  transition: .3s ease
+  &.active
+    color: #fff
+    background: $accent
+    border: 1px solid $accent
+      bottom: 1px solid #000
+
+
+.filter-checked
+  width: 100%
+  background: #fff
+  border: 10px solid #f6f6f6
+  padding: 7px 10px
+  display: none
+  &.active
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+
+.filter-checked-label
+  display: flex
+  margin: 0 30px 0 0
+  position: relative
+  color: #666
+  font-size: 16px
+  text-transform: uppercase
+  transition: .3s ease
+  cursor: pointer
+  width: fit-content
+  input[type='radio']
+    display: none
+  &:before
+    content: ''
+    position: absolute
+    background: url("../img/arrow_catalog.svg") no-repeat center
+      size: 100%
+    width: 5px
+    height: 9px
+    top: 50%
+    transform: translate(0,-50%)
+    left: 0
+  >span
+    display: flex
+    align-items: center
+    padding: 4px 0 4px 10px
+    border: 1px solid transparent
+    transition: .3s ease
+    &.active
+      border: 1px solid #e8e8e8
+      box-shadow: 0 4px 10px 0 rgba(30, 30, 36, 0.22)
+      border-radius: 3px
+      padding: 4px 16px
+      color: #666
+  &.click
+    &:before
+      display: none
+
+.remove-filter
+  margin: 0 0 0 7px
+  color: #222
+
+.category-card
+  margin: 0 0 30px
+  position: relative
+  width: 100%
+  transition: .3s ease
+  padding: 20px 20px 24px
+  border: 2px solid transparent
+  background: #fff
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    bottom: -15px
+    transform: translate(-50%,0)
+    height: 1px
+    width: calc(100% + 34px)
+    background: #e8e8e8
+    z-index: -1
+  &:hover
+    border-color: $accent
+    box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.2)
+    .category-card__title
+      color: $accent
+      text-decoration: underline
+    .category-card-slider-image
+      .slick-arrow
+        opacity: 1
+    .btn
+      box-shadow: 0px 9px 14px 0 rgba(0, 0, 0, 0.19)
+  &__title
+    width: 100%
+    text-align: center
+    margin: 0 auto
+    font-size: 24px
+    color: #222
+  .product-information-box
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+  .product-information-box__title
+    margin: 0 0 11px
+  .list-options li
+    margin: 0 8px 8px 0
+  .list-options__img
+    width: 35px
+    height: 35px
+  &__footer
+    margin: 20px 0 0
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+.btn-order-product
+  max-width: 256px
+  width: 100%
+
+.category-card-price
+  display: flex
+  align-items: center
+  font-size: 22px
+  color: #222
+  p
+    font-weight: bold
+    color: $accent
+    margin: 0 5px 0 0
+
+.category-card-slider-image
+  width: 100%
+  margin: 50px auto
+  .slick-arrow
+    opacity: 0
+  .slick-next
+    right: 0
+  .slick-prev
+    left: 0
+  &__item
+    display: flex
+    align-items: center
+    justify-content: center
+    max-width: 337px
+    width: 100%
+    height: 268px
+    margin: 0 auto
+    img
+      max-height: 100%
+
+.category-card-characteristics
+  margin: 15px 0 0
+  width: 100%
+  border: solid 1px #d9d9d9
+  background: #f2f2f2
+  .card-body
+    padding: 8px 9px 10px
+    border: none
+      radius: 0
+    background: transparent
+  .list-characteristics
+    font-size: 16px
+    color: #222
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    li
+      width: 50%
+      display: block
+      p
+        font-weight: normal
+        margin: 0 5px 0 0
+        color: $accent
+      p, span
+        padding: 0
+        width: fit-content
+        background: transparent
+        display: inline
+      &:before
+        display: none
+
+.links-collapse
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 7px 9px
+  color: #777
+  &:hover
+    color: $accent
+  &:after
+    content: '+'
+    transition: .3s ease
+    font-size: 18px
+  &.collapsed
+    &:after
+      content: '-'
+
+.consultation-box
+  background: $accent
+  color: #fff
+  margin: 0
+  .consultation-header
+    background: transparent
+    padding: 26px 10px 24px
+    h3
+      font-weight: bold
+      font-size: 30px
+      text-transform: uppercase
+      text-align: center
+      span
+        display: block
+  .consultation-body
+    padding: 0 46px 32px
+    background: transparent
+  button
+    height: 50px
+    border-radius: 3px
+    text-transform: uppercase
+    font-size: 18px
+  .form-consultation
+    label
+      margin: 0 0 14px
+    .checkbox
+      font-size: 15px
+      letter-spacing: 0.38px
+      line-height: 1.33
+      margin: 0 0 24px
+  .checkbox-custom
+    background: #fff
+    &:before
+      background: url("../img/check.svg") no-repeat center
+        size: 100%
+
+.projects
+  margin: 54px 0 140px
+
+.projects-slider
+  margin: 0 0 48px
+  position: relative
+  padding: 0 25px
+  .slick-arrow
+    z-index: 2
+  .slick-prev
+    left: 0
+  .slick-next
+    right: 0
+  .slick-slide
+    padding: 0 4px
+  &__item
+    border-radius: 3px
+    border: solid 1px #e8e8e8
+    width: 260px
+    height: 172px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.projects-text
+  margin: 0 0 100px
+  &:last-child
+    margin: 0
+  &__title
+    margin: 0 0 20px
+    text-transform: uppercase
+    font-size: 20px
+    line-height: 1
+    color: #222
+    padding: 0 0 0 10px
+    border-left: 3px solid #e71f29
+  .list-options li
+    border: none
+    cursor: auto
+    &.active .list-options__img
+      border: none
+
+.projects-text-list
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  text-align: center
+  color: #222
+  font-size: 20px
+  span
+    display: block
+    margin: 0 auto 14px
+  img
+    margin: 0 auto
+  li
+    margin: 0 40px 5px 0
+    &:last-child
+      margin: 0 0 5px
+
+.size-list
+  span
+    margin: 0
+    padding: 0 0 5px
+    border-bottom: 1px dotted #a0a0a0
+    line-height: 1
+/*==========  category page end  ==========*/
 
 
 /*==========  certificates  ==========*/
