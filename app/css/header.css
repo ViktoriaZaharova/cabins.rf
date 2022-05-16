@@ -439,6 +439,57 @@ header {
   .fixed .header-box-links__icon {
     width: 20px;
     min-width: 20px; }
+  .fixed .header-product {
+    display: block; }
+
+.header-product {
+  display: none;
+  width: 100%;
+  border-top: 1px solid #d9d9d9;
+  padding: 7px 0; }
+  .header-product .btn {
+    font-size: 14px;
+    padding: 0 34px; }
+  .header-product .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 19px 0 0;
+    font-size: 22px;
+    color: #222; }
+    .header-product .price p {
+      margin: 0 5px 0 0;
+      font-weight: bold;
+      color: #00a4e5; }
+
+.header-product-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 0 0; }
+  .header-product-box__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 86px;
+    min-width: 86px;
+    margin: 0 5px 0 0; }
+  .header-product-box__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #222; }
 
 /*==========  header end  ==========*/
 /*==========  section  ==========*/

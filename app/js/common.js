@@ -78,6 +78,7 @@ $('.projects-slider').slick({
     nextArrow: '<button type="button" class="slick-next slick-next-blue"></button>',
 });
 
+// fixed header
 $(window).scroll(function () {
     if ($(this).scrollTop() > 52) {
         $('header').addClass('fixed');
@@ -108,6 +109,7 @@ $('.location-dropdown__close').on('click', function (e) {
     $('.location-dropdown').fadeOut();
 });
 
+// mobile menu
 $('.btn-burger').on('click', function (e) {
     e.preventDefault();
 
@@ -165,20 +167,17 @@ $('.video-reviews-wrapper .btn-toggle').on('click', function (e) {
     }
 });
 
+// animate scroll
 $(".go_to").on("click", function (event) {
-    //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
 
-    //забираем идентификатор бока с атрибута href
     var id = $(this).attr('href'),
-
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
         top = $(id).offset().top,
         header = $('header').height();
 
-    //анимируем переход на расстояние - top за 500 мс
     $('body,html').animate({scrollTop: top - header - 10}, 500);
 });
+
 
 $('.list-options').each(function () {
     $(this).find('li').click(function () {
@@ -187,6 +186,8 @@ $('.list-options').each(function () {
     });
 });
 
+
+// filter catalog
 $(document).ready(function(){
     $(".filter-category-item").click(function(){
         var r = $(this).data("type");
@@ -230,4 +231,31 @@ $('.remove-filter').click(function() {
         mSearch2.reset();
         $('.filter-checked-label').removeClass('click');
     }, 100);
+});
+
+// amount
+$('.down').on("click", function () {
+    let $input = $(this).parent().find('input');
+    let count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count + 'шт');
+    $input.change();
+    return false;
+});
+$('.up').on("click",function () {
+    let $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1 + 'шт');
+    $input.change();
+    return false;
+});
+
+$('.calculate-info-item').on('click', function () {
+    $('.calculate-info-item').removeClass('active');
+    $(this).addClass('active');
+});
+
+$('.btn-add-option').on('click', function (e) {
+    e.preventDefault();
+    $(this).parents('.option-equipment').find('.hidden-block').fadeIn();
+    $(this).fadeOut();
 });
