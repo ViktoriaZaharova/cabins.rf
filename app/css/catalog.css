@@ -1174,6 +1174,12 @@ sup {
 .total-configuration-wrapper {
   width: 100%;
   color: #fff; }
+  .total-configuration-wrapper.disabled .total-configuration-top {
+    background: #dbdbdb; }
+  .total-configuration-wrapper.disabled .total-configuration-bottom {
+    background: #c3c3c3; }
+    .total-configuration-wrapper.disabled .total-configuration-bottom .btn {
+      display: none; }
 
 .total-configuration-top {
   background: #00a3e2;
