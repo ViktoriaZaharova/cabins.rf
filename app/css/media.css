@@ -128,7 +128,7 @@
     margin: 40px 0; }
   .title-decor {
     margin: 0 0 30px; }
-  .button-group .btn {
+  .button-group .btn, .button-group .price-product {
     width: 100%;
     margin: 0 auto 10px; }
   .product-information {

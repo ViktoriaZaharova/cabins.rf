@@ -211,7 +211,7 @@ sup {
 .price-product {
   width: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,8 +246,13 @@ sup {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .button-group .btn {
+  .button-group .btn, .button-group .price-product {
     width: calc(50% - 10px); }
+  .button-group .price-product {
+    padding: 11px 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
 
 .product-information-box {
   margin: 15px 0 0; }
