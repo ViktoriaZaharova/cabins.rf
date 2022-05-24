@@ -339,39 +339,6 @@ $(document).ready(function () {
 });
 
 
-$(window).scroll(function () {
-    var toTable = $('.table_wrap').offset();
-    var heightTable = $('.table_wrap').height();
-    var heightWindow = $(window).height();
-
-    if (document.documentElement.clientWidth > 768) {
-        var mobileX = 0;
-    } else {
-        mobileX = -30;
-    }
-
-
-    if ($(this).scrollTop() > toTable.top - heightWindow + $('#characteristicFixedBlock').height() + 185 + mobileX) {
-        $('#characteristicFixedBlock').fadeIn();
-    } else {
-        $('#characteristicFixedBlock').fadeOut();
-    }
-
-
-    if ($(this).scrollTop() > toTable.top + heightTable - heightWindow + 58) {
-        $('#characteristicFixedBlock').removeClass('fixed-bottom');
-        $('#characteristicFixedBlock').css({
-            'margin-top': heightTable + 'px'
-        });
-    } else {
-        $('#characteristicFixedBlock').addClass('fixed-bottom')
-        $('#characteristicFixedBlock').css({
-            'margin-top': 'unset'
-        })
-
-    }
-});
-
 
 // выделить область таблицы по клику на комплектацию в зависимости от значениея data-tab
 $(document).ready(function () {
@@ -386,4 +353,7 @@ $(document).ready(function () {
         content.addClass('active'); // 4
     })
 });
+
+
+
 
