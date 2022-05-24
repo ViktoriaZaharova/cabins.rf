@@ -34,7 +34,21 @@
   .option-equipment {
     margin: 0 0 40px; }
   .total-configuration-top {
-    padding: 50px 40px; } }
+    padding: 50px 40px; }
+  .menu-right .consultation-wrapper {
+    max-width: 228px; }
+  .banner {
+    max-width: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+    .banner.fixed-block-scroll.fix {
+      right: 15px; }
+  .fixed-bottom {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: calc(100% - 40px); } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -45,7 +59,7 @@
       font-size: 21px; }
   .schedule {
     margin: 15px 0; }
-  .selling-cities-row > p, .selling-cities-box {
+  .selling-cities-row > p, .selling-cities-row > a, .selling-cities-box {
     margin: 0 0 20px; }
   .selling-box {
     margin: 0 0 30px; }
@@ -120,16 +134,16 @@
   .product-information {
     padding: 0; }
   .total-sum-product .btn {
-    margin: 10px auto 0; }
+    font-size: 12px;
+    margin: 0 0 0 auto; }
   .total-price {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .characteristics-product-total {
     position: relative; }
   .characteristics-product-wrapper {
-    padding: 11px 0 0; }
+    padding: 11px 0 58px; }
   .tab-content-equipment {
     max-height: none;
     overflow-y: visible; }
@@ -148,8 +162,6 @@
       display: block; }
   .btn-order-product {
     max-width: 200px; }
-  .projects-text {
-    margin: 0 0 40px; }
   .header-product-box__title {
     font-size: 18px; } }
 
@@ -422,7 +434,16 @@
   .calculate-info-item {
     padding: 20px; }
     .calculate-info-item__img {
-      height: 150px; } }
+      height: 150px; }
+  .total-price {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .total-sum-product .btn {
+    margin: 10px auto 0; }
+  .characteristics-product-wrapper {
+    padding: 11px 0 86px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -666,6 +687,4 @@
   .form-subscribe button {
     font-size: 13px; }
   .why-company-box {
-    width: 100%; }
-  .projects-slider__item {
-    width: 240px; } }
+    width: 100%; } }

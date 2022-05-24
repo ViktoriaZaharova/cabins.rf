@@ -207,7 +207,7 @@ button, .btn {
   color: #222; }
   .btn-border:hover {
     background: #222;
-    color: #00a4e5; }
+    color: #fff; }
 
 .btn-green {
   border-style: solid;
@@ -343,7 +343,7 @@ ol {
   color: #fff; }
 
 a.color-white:hover {
-  color: #666; }
+  color: #ffe14d; }
 
 .color-accent {
   color: #00a4e5; }
@@ -587,3 +587,7 @@ h1, h2, h3, h4, h5, h6, table tr th, table tr td {
   padding: 0 0 0 12px;
   line-height: 1.25;
   margin: 0 0 56px; }
+
+.fix {
+  position: fixed;
+  z-index: 2; }

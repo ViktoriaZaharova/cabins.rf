@@ -257,7 +257,10 @@ header {
       -webkit-transition: .3s ease;
       transition: .3s ease; }
     .menu > li > a:hover {
-      color: #00a4e5; }
+      background: #00a4e5;
+      color: #fff; }
+      .menu > li > a:hover:before {
+        background: #00a4e5; }
   .menu > li:last-child a:before {
     display: none; }
   .menu .dropdown:hover > a {
@@ -302,7 +305,8 @@ header {
   left: 100%;
   top: 0;
   background: #00a7e6;
-  display: none; }
+  display: none;
+  padding: 0; }
 
 .search-dropdown {
   width: 100%;

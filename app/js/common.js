@@ -71,11 +71,37 @@ $('.category-card-slider-image').slick({
 });
 
 $('.projects-slider').slick({
-    slidesToShow: 4,
-    centerMode: true,
-    variableWidth: true,
+    slidesToShow: 5,
+    // centerMode: true,
+    // variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev slick-prev-blue"></button>',
     nextArrow: '<button type="button" class="slick-next slick-next-blue"></button>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
 
 // fixed header
@@ -83,10 +109,27 @@ $(window).scroll(function () {
     if ($(this).scrollTop() > 52) {
         $('header').addClass('fixed');
         $('body').addClass('header-fixed');
+
     } else {
         $('header').removeClass('fixed');
         $('body').removeClass('header-fixed');
+
     }
+});
+
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(window).width() > 768) {
+
+            if ($(this).scrollTop() > 52) {
+                $('.header-bottom').css('display', 'none');
+            } else {
+                $('.header-bottom').css('display', 'flex');
+            }
+
+        }
+    });
 });
 
 
@@ -188,8 +231,8 @@ $('.list-options').each(function () {
 
 
 // filter catalog
-$(document).ready(function(){
-    $(".filter-category-item").click(function(){
+$(document).ready(function () {
+    $(".filter-category-item").click(function () {
         var r = $(this).data("type");
 
         $(".filter-category-item").removeClass("active");
@@ -204,30 +247,30 @@ $('.filter-checked .filter-checked-label input[type=radio]:checked+span').append
 $('.filter-checked .filter-checked-label input[type=radio]:checked').parent().addClass('click');
 
 
-$('.filter-checked .filter-checked-label input[type=radio]').change(function(){
+$('.filter-checked .filter-checked-label input[type=radio]').change(function () {
     $('.filter-checked .filter-checked-label input[type=radio]+span').removeClass('active');
     $('.filter-checked .filter-checked-label input[type=radio]:checked+span').addClass('active');
     $('.filter-checked .filter-checked-label input[type=radio]+span>.remove-filter').remove();
     $('.filter-checked .filter-checked-label input[type=radio]:checked+span').append("<div class='remove-filter'>✕</div>");
-    $('.remove-filter').click(function() {
+    $('.remove-filter').click(function () {
         $(this).remove();
         $('.filter-checked .filter-checked-label input[type=radio]:checked+span').removeClass('active');
-        setTimeout(function(){
+        setTimeout(function () {
             mSearch2.reset();
             $('.filter-checked-label').removeClass('click');
         }, 100);
     });
 });
 
-$('.filter-checked-label').click(function(){
+$('.filter-checked-label').click(function () {
     $('.filter-checked-label').removeClass('click');
     $(this).addClass('click');
 });
 
-$('.remove-filter').click(function() {
+$('.remove-filter').click(function () {
     $(this).remove();
     $('.filter-checked .filter-checked-label input[type=radio]:checked+span').removeClass('active');
-    setTimeout(function(){
+    setTimeout(function () {
         mSearch2.reset();
         $('.filter-checked-label').removeClass('click');
     }, 100);
@@ -242,7 +285,7 @@ $('.down').on("click", function () {
     $input.change();
     return false;
 });
-$('.up').on("click",function () {
+$('.up').on("click", function () {
     let $input = $(this).parent().find('input');
     $input.val(parseInt($input.val()) + 1 + 'шт');
     $input.change();
@@ -259,3 +302,88 @@ $('.btn-add-option').on('click', function (e) {
     $(this).parents('.option-equipment').find('.hidden-block').fadeIn();
     $(this).fadeOut();
 });
+
+// фиксирование формы при скролле
+$(document).ready(function () {
+    if ($(window).width() > 992) {
+        if ($('.fixed-block-scroll').length > 0) {
+            var offset = $('.fixed-block-scroll').offset();
+            var offsetTop = parseInt(offset.top + 10);
+            // var footerHeight = $('footer').height() + $('.clients').height();
+            var footerHeight = $('footer').height();
+            var bannerHeight = $('.fixed-block-scroll').height();
+
+            $(window).scroll(function () {
+
+
+                var scroll = $(window).scrollTop();
+                var stopHeight = ($(document).height() - bannerHeight) - (footerHeight + bannerHeight / 2);
+
+                //Начало движения
+                if (scroll > offsetTop) {
+                    $('.fixed-block-scroll').addClass('fix');
+                } else {
+                    $('.fixed-block-scroll').removeClass('fix');
+                }
+
+                //Остановка движения
+                if (scroll > stopHeight) {
+                    $('.fixed-block-scroll').addClass('stop');
+                } else {
+                    $('.fixed-block-scroll').removeClass('stop').css('top', 70);
+                }
+            });
+        }
+
+    }
+});
+
+
+$(window).scroll(function () {
+    var toTable = $('.table_wrap').offset();
+    var heightTable = $('.table_wrap').height();
+    var heightWindow = $(window).height();
+
+    if (document.documentElement.clientWidth > 768) {
+        var mobileX = 0;
+    } else {
+        mobileX = -30;
+    }
+
+
+    if ($(this).scrollTop() > toTable.top - heightWindow + $('#characteristicFixedBlock').height() + 185 + mobileX) {
+        $('#characteristicFixedBlock').fadeIn();
+    } else {
+        $('#characteristicFixedBlock').fadeOut();
+    }
+
+
+    if ($(this).scrollTop() > toTable.top + heightTable - heightWindow + 58) {
+        $('#characteristicFixedBlock').removeClass('fixed-bottom');
+        $('#characteristicFixedBlock').css({
+            'margin-top': heightTable + 'px'
+        });
+    } else {
+        $('#characteristicFixedBlock').addClass('fixed-bottom')
+        $('#characteristicFixedBlock').css({
+            'margin-top': 'unset'
+        })
+
+    }
+});
+
+
+// выделить область таблицы по клику на комплектацию в зависимости от значениея data-tab
+$(document).ready(function () {
+    $(".js-tab-equipment").click(function () {
+        var id = $(this).attr('data-equipment'),
+            content = $('.js-tab-equipment-content[data-equipment="' + id + '"]');
+
+        $('.js-tab-equipment.active').removeClass('active'); // 1
+        $(this).addClass('active'); // 2
+
+        $('.js-tab-equipment-content.active').removeClass('active'); // 3
+        content.addClass('active'); // 4
+    })
+});
+

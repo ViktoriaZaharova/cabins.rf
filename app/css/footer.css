@@ -234,7 +234,17 @@ footer {
       border-radius: 0;
     top: 10px;
     right: 10px;
-    margin: 0; }
+    margin: 0;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+    .modal-header .close img {
+      -webkit-transition: .3s ease;
+      transition: .3s ease; }
+    .modal-header .close:hover {
+      background: url("../img/close-popup-red.svg") no-repeat center;
+        background-size: 100%; }
+      .modal-header .close:hover img {
+        display: none; }
 
 .modal-title {
   text-align: center;

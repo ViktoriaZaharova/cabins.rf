@@ -46,7 +46,7 @@
             <li><a href="availability.html">наличие</a></li>
           </ul>
           <p>Успей зафиксировать стоимость - поднятие цен в апреле</p>
-          <a href="#" class="btn btn-border">зафиксировать</a>
+          <a href="#" class="btn btn-border" data-target="#callbackModal" data-toggle="modal">зафиксировать</a>
         </div>
 
         <div class="header-center">
@@ -463,8 +463,8 @@
           <div class="product-information-box">
             <div class="product-information-box__title">Комплектация:</div>
             <ul class="list-options my-ul">
-              <li class="list-options-item active">Эконом</li>
-              <li class="list-options-item">Стандарт</li>
+              <li class="list-options-item js-tab-equipment active" data-equipment="1">Эконом</li>
+              <li class="list-options-item js-tab-equipment" data-equipment="2">Стандарт</li>
             </ul>
           </div>
 
@@ -562,128 +562,163 @@
               <div class="row">
                 <div class="col-12">
                   <div class="characteristics-product-wrapper">
-                    <div class="table-responsive">
+                    <div class="characteristics-product-total-wrap fixed-bottom" id="characteristicFixedBlock">
+                      <div class="characteristics-product-total">
+                        <div class="table-responsive">
+                          <table class="table table-product">
+                            <tbody>
+                            <tr>
+                              <td></td>
+                              <td>
+                                <div class="total-sum-product">
+                                  <div class="total-price">
+                                    <p>Цена: </p>
+                                    <span>93400 ₽</span>
+                                  </div>
+                                  <a href="#" class="btn btn-green">Зафиксировать цену</a>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="total-sum-product">
+                                  <div class="total-price">
+                                    <p>Цена: </p>
+                                    <span>93400 ₽</span>
+                                  </div>
+                                  <a href="#" class="btn btn-green">Зафиксировать цену</a>
+                                </div>
+                              </td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="table-responsive table_wrap">
                       <table class="table table-product table-product-info">
                         <thead>
                         <tr>
                           <th></th>
-                          <th>Эконом</th>
-                          <th>Стандарт</th>
+                          <th class="js-tab-equipment-content active" data-equipment="1">Эконом</th>
+                          <th class="js-tab-equipment-content" data-equipment="2">Стандарт</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                           <td>Длина</td>
-                          <td>4 м</td>
-                          <td>4 м</td>
+                          <td class="js-tab-equipment-content active" data-equipment="1">4 м</td>
+                          <td class="js-tab-equipment-content" data-equipment="2">4 м</td>
                         </tr>
                         <tr>
                           <td>Ширина</td>
-                          <td>2,4 м</td>
-                          <td>2,4 м</td>
+                          <td class="js-tab-equipment-content active" data-equipment="1">2,4 м</td>
+                          <td class="js-tab-equipment-content" data-equipment="2">2,4 м</td>
                         </tr>
                         <tr>
                           <td>Высота</td>
-                          <td>2,45 м</td>
-                          <td>2,45 м</td>
+                          <td class="js-tab-equipment-content active" data-equipment="1">2,45 м</td>
+                          <td class="js-tab-equipment-content" data-equipment="2">2,45 м</td>
                         </tr>
                         <tr>
                           <td>Внешняя отделка</td>
-                          <td>Оцинкованный профлист "C8", толщина 0,4 мм</td>
-                          <td>Оцинкованный профлист "C8", толщина 0,4 мм</td>
+                          <td class="js-tab-equipment-content active" data-equipment="1">Оцинкованный профлист "C8",
+                            толщина 0,4 мм
+                          </td>
+                          <td class="js-tab-equipment-content" data-equipment="2">Оцинкованный профлист "C8", толщина
+                            0,4 мм
+                          </td>
                         </tr>
                         <tr>
                           <td>Силовой каркас</td>
-                          <td>Холодно-гнутый профиль, окрашенный синей эмалью, размеры 100х50х3 мм</td>
-                          <td>Холодно-гнутый профиль, окрашенный синей эмалью, размеры 120х50х3 мм</td>
+                          <td class="js-tab-equipment-content active" data-equipment="1">Холодно-гнутый профиль,
+                            окрашенный синей эмалью, размеры 100х50х3 мм
+                          </td>
+                          <td class="js-tab-equipment-content" data-equipment="2">Холодно-гнутый профиль, окрашенный
+                            синей эмалью, размеры 120х50х3 мм
+                          </td>
                         </tr>
                         <tr>
                           <td>Угловые несущие стойки</td>
-                          <td>Угол усиленный, размеры 90х90х3 мм</td>
-                          <td>Угол горячекатаный 75х75х5 мм</td>
+                          <td class="js-tab-equipment-content active" data-equipment="1">Угол усиленный, размеры 90х90х3
+                            мм
+                          </td>
+                          <td class="js-tab-equipment-content" data-equipment="2">Угол горячекатаный 75х75х5 мм</td>
                         </tr>
                         <tr>
                           <td>Обрешетка внутреннего второстепенного каркаса</td>
-                          <td>Брус, размеры 40х70 мм</td>
-                          <td>Брус, размеры 40х100 мм</td>
+                          <td class="js-tab-equipment-content active" data-equipment="1">Брус, размеры 40х70 мм</td>
+                          <td class="js-tab-equipment-content" data-equipment="2">Брус, размеры 40х100 мм</td>
                         </tr>
                         <tr>
                           <td>Половые и потолочные лаги</td>
-                          <td>Брус, размеры 40х70 мм</td>
-                          <td>Брус, размеры 40х100 мм</td>
+                          <td class="js-tab-equipment-content active" data-equipment="1">Брус, размеры 40х70 мм</td>
+                          <td class="js-tab-equipment-content" data-equipment="2">Брус, размеры 40х100 мм</td>
                         </tr>
                         <tr>
                           <td>Пол черновой</td>
-                          <td>Доска обрезная, размеры 25х100 мм</td>
-                          <td>Доска обрезная, размеры 25х100 мм</td>
+                          <td class="js-tab-equipment-content active" data-equipment="1">Доска обрезная, размеры 25х100
+                            мм
+                          </td>
+                          <td class="js-tab-equipment-content" data-equipment="2">Доска обрезная, размеры 25х100 мм</td>
                         </tr>
                         <tr>
                           <td>Пол чистовой</td>
-                          <td>Доска обрезная, размеры 25х100 мм</td>
-                          <td>ДСП, толщина 16 мм. поверх обрезной доски 25х100 мм</td>
+                          <td class="js-tab-equipment-content active" data-equipment="1">Доска обрезная, размеры 25х100
+                            мм
+                          </td>
+                          <td class="js-tab-equipment-content" data-equipment="2">ДСП, толщина 16 мм. поверх обрезной
+                            доски 25х100 мм
+                          </td>
                         </tr>
                         <tr>
                           <td>Утепление стен, пола и потолка</td>
-                          <td>Утеплитель рулонного типа URSA, KNAUF, ISOVER или аналог, толщина 50 мм</td>
-                          <td>Утеплитель рулонного типа URSA, KNAUF, ISOVER или аналог, толщина 100 мм</td>
+                          <td class="js-tab-equipment-content active" data-equipment="1">Утеплитель рулонного типа URSA,
+                            KNAUF, ISOVER или аналог, толщина 50 мм
+                          </td>
+                          <td class="js-tab-equipment-content" data-equipment="2">Утеплитель рулонного типа URSA, KNAUF,
+                            ISOVER или аналог, толщина 100 мм
+                          </td>
                         </tr>
                         <tr>
                           <td>Пароизоляция пола, потолка и стен</td>
-                          <td>ПВХ пленка, с двух сторон от утеплителя, толщина 80 мк</td>
-                          <td>ПВХ пленка, с двух сторон от утеплителя, толщина 80 мк</td>
+                          <td class="js-tab-equipment-content active" data-equipment="1">ПВХ пленка, с двух сторон от
+                            утеплителя, толщина 80 мк
+                          </td>
+                          <td class="js-tab-equipment-content" data-equipment="2">ПВХ пленка, с двух сторон от
+                            утеплителя, толщина 80 мк
+                          </td>
                         </tr>
                         <tr>
                           <td>Кровля</td>
-                          <td>Плоская сварная, выполнена из стального листа, толщина 1 мм., швы обработаны
+                          <td class="js-tab-equipment-content active" data-equipment="1">Плоская сварная, выполнена из
+                            стального листа, толщина 1 мм., швы обработаны
                             мастикой, эмалированы
                           </td>
-                          <td>Плоская сварная, выполнена из стального листа, толщина 1 мм., швы обработаны
+                          <td class="js-tab-equipment-content" data-equipment="2">Плоская сварная, выполнена из
+                            стального листа, толщина 1 мм., швы обработаны
                             мастикой, эмалированы
                           </td>
                         </tr>
                         <tr>
                           <td>Дверь входная</td>
-                          <td>Оргалитовая ДГ 9, снаружи обита оцинкованным листом, размер 0,8х2 м</td>
-                          <td>Оргалитовая ДГ 9, снаружи обита оцинкованным листом, размер 0,8х2 м. С врезным
+                          <td class="js-tab-equipment-content active" data-equipment="1">Оргалитовая ДГ 9, снаружи обита
+                            оцинкованным листом, размер 0,8х2 м
+                          </td>
+                          <td class="js-tab-equipment-content" data-equipment="2">Оргалитовая ДГ 9, снаружи обита
+                            оцинкованным листом, размер 0,8х2 м. С врезным
                             замком.
                           </td>
                         </tr>
                         <tr>
                           <td>Окно</td>
-                          <td>Деревянное с двойным остеклением, размер 0,8х0,8 м</td>
-                          <td>Деревянное с двойным остеклением, размер 0,8х1 м</td>
+                          <td class="js-tab-equipment-content active" data-equipment="1">Деревянное с двойным
+                            остеклением, размер 0,8х0,8 м
+                          </td>
+                          <td class="js-tab-equipment-content" data-equipment="2">Деревянное с двойным остеклением,
+                            размер 0,8х1 м
+                          </td>
                         </tr>
                         </tbody>
                       </table>
-                    </div>
-                    <div class="characteristics-product-total">
-                      <div class="table-responsive">
-                        <table class="table table-product">
-                          <tbody>
-                          <tr>
-                            <td></td>
-                            <td>
-                              <div class="total-sum-product">
-                                <div class="total-price">
-                                  <p>Цена: </p>
-                                  <span>93400 ₽</span>
-                                </div>
-                                <a href="#" class="btn btn-green">Зафиксировать цену</a>
-                              </div>
-                            </td>
-                            <td>
-                              <div class="total-sum-product">
-                                <div class="total-price">
-                                  <p>Цена: </p>
-                                  <span>93400 ₽</span>
-                                </div>
-                                <a href="#" class="btn btn-green">Зафиксировать цену</a>
-                              </div>
-                            </td>
-                          </tr>
-                          </tbody>
-                        </table>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -694,79 +729,92 @@
                 <div class="row">
                   <div class="col-12 col-lg-4 d-none d-lg-block">
                     <div class="nav flex-column nav-tabs-products-equipment" role="tablist" aria-orientation="vertical">
-                      <a class="nav-link nav-tabs-products-equipment__links active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1"
+                      <a class="nav-link nav-tabs-products-equipment__links active" id="v-pills-1-tab"
+                         data-toggle="pill" href="#v-pills-1"
                          role="tab" aria-controls="v-pills-1" aria-selected="true">
                         <span class="nav-link__icon"><img src="img/dop_4262.png" alt=""></span>
                         <span class="nav-link__text">двери</span>
                       </a>
 
-                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab"
+                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-2-tab" data-toggle="pill"
+                         href="#v-pills-2" role="tab"
                          aria-controls="v-pills-2" aria-selected="false">
                         <span class="nav-link__icon"><img src="img/dop_4263.png" alt=""></span>
                         <span class="nav-link__text">электрика</span>
                       </a>
 
-                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3"
+                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-3-tab" data-toggle="pill"
+                         href="#v-pills-3"
                          role="tab" aria-controls="v-pills-3" aria-selected="false">
                         <span class="nav-link__icon"><img src="img/dop_4264.png" alt=""></span>
                         <span class="nav-link__text">окна</span>
                       </a>
 
-                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4"
+                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-4-tab" data-toggle="pill"
+                         href="#v-pills-4"
                          role="tab" aria-controls="v-pills-4" aria-selected="false">
                         <span class="nav-link__icon"><img src="img/dop_4265.png" alt=""></span>
                         <span class="nav-link__text">утепление</span>
                       </a>
 
-                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5"
+                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-5-tab" data-toggle="pill"
+                         href="#v-pills-5"
                          role="tab" aria-controls="v-pills-5" aria-selected="false">
                         <span class="nav-link__icon"><img src="img/dop_4266.png" alt=""></span>
                         <span class="nav-link__text">вентиляция</span>
                       </a>
 
-                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6"
+                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-6-tab" data-toggle="pill"
+                         href="#v-pills-6"
                          role="tab" aria-controls="v-pills-6" aria-selected="false">
                         <span class="nav-link__icon"><img src="img/dop_4267.png" alt=""></span>
                         <span class="nav-link__text">пол</span>
                       </a>
 
-                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-7-tab" data-toggle="pill" href="#v-pills-7"
+                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-7-tab" data-toggle="pill"
+                         href="#v-pills-7"
                          role="tab" aria-controls="v-pills-7" aria-selected="false">
                         <span class="nav-link__icon"><img src="img/dop_4268.png" alt=""></span>
                         <span class="nav-link__text">сантехника</span>
                       </a>
 
-                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-8-tab" data-toggle="pill" href="#v-pills-8"
+                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-8-tab" data-toggle="pill"
+                         href="#v-pills-8"
                          role="tab" aria-controls="v-pills-8" aria-selected="false">
                         <span class="nav-link__icon"><img src="img/dop_4269.png" alt=""></span>
                         <span class="nav-link__text">безопасность</span>
                       </a>
 
-                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-9-tab" data-toggle="pill" href="#v-pills-9"
+                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-9-tab" data-toggle="pill"
+                         href="#v-pills-9"
                          role="tab" aria-controls="v-pills-9" aria-selected="false">
                         <span class="nav-link__icon"><img src="img/dop_4272.png" alt=""></span>
                         <span class="nav-link__text">внутренняя отделка</span>
                       </a>
 
-                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-10-tab" data-toggle="pill" href="#v-pills-10"
+                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-10-tab" data-toggle="pill"
+                         href="#v-pills-10"
                          role="tab" aria-controls="v-pills-10" aria-selected="false">
                         <span class="nav-link__icon"><img src="img/dop_4273.png" alt=""></span>
                         <span class="nav-link__text">внешняя отделка</span>
                       </a>
 
-                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-11-tab" data-toggle="pill" href="#v-pills-11"
+                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-11-tab" data-toggle="pill"
+                         href="#v-pills-11"
                          role="tab" aria-controls="v-pills-11" aria-selected="false">
                         <span class="nav-link__icon"><img src="img/dop_4274.png" alt=""></span>
                         <span class="nav-link__text">мебель</span>
                       </a>
 
-                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-12-tab" data-toggle="pill" href="#v-pills-12"
+                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-12-tab" data-toggle="pill"
+                         href="#v-pills-12"
                          role="tab" aria-controls="v-pills-12" aria-selected="false">
                         <span class="nav-link__icon"><img src="img/dop_4275.png" alt=""></span>
                         <span class="nav-link__text">фундамент</span>
                       </a>
 
-                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-13-tab" data-toggle="pill" href="#v-pills-13"
+                      <a class="nav-link nav-tabs-products-equipment__links" id="v-pills-13-tab" data-toggle="pill"
+                         href="#v-pills-13"
                          role="tab" aria-controls="v-pills-13" aria-selected="false">
                         <span class="nav-link__icon"><img src="img/dop_4273.png" alt=""></span>
                         <span class="nav-link__text">Бытовая техника</span>
@@ -777,7 +825,8 @@
                   <div class="col-12 col-lg-8">
                     <div class="tab-content tab-content-equipment">
 
-                      <a class="nav-link nav-tabs-products-equipment__links active" data-toggle="collapse" href="#v-pills-1"
+                      <a class="nav-link nav-tabs-products-equipment__links active" data-toggle="collapse"
+                         href="#v-pills-1"
                          role="tab" aria-controls="v-pills-1" aria-selected="true">
                         <span class="nav-link__icon"><img src="img/dop_4262.png" alt=""></span>
                         <span class="nav-link__text">двери</span>
@@ -796,99 +845,110 @@
                             </td>
                           </tr>
                           <tr>
-                            <td><img src="img/ДГ-9.gif" alt=""></td>
+                            <td><img src="img/Финская.gif" alt=""></td>
                             <td>
-                              <p>Дополнительная дверь ДГ-9 (деревянная), 800х2000 мм</p>
+                              <p> Дополнительная межкомнатная дверь МДФ (белая), 800х2000 мм</p>
                             </td>
                             <td>
-                              <p>3200 руб.</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><img src="img/ДГ-9.gif" alt=""></td>
-                            <td>
-                              <p>Дополнительная дверь ДГ-9 (деревянная), 800х2000 мм</p>
-                            </td>
-                            <td>
-                              <p>3200 руб.</p>
+                              <p>6100 руб.</p>
                             </td>
                           </tr>
                           <tr>
-                            <td><img src="img/ДГ-9.gif" alt=""></td>
+                            <td><img src="img/ПроизводствоКитай.gif" alt=""></td>
                             <td>
-                              <p>Дополнительная дверь ДГ-9 (деревянная), 800х2000 мм</p>
+                              <p>Дверь металлическая (Китай)</p>
                             </td>
                             <td>
-                              <p>3200 руб.</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><img src="img/ДГ-9.gif" alt=""></td>
-                            <td>
-                              <p>Дополнительная дверь ДГ-9 (деревянная), 800х2000 мм</p>
-                            </td>
-                            <td>
-                              <p>3200 руб.</p>
+                              <p>7000 руб.</p>
                             </td>
                           </tr>
                           <tr>
-                            <td><img src="img/ДГ-9.gif" alt=""></td>
+                            <td><img src="img/dverstroĭgost.jpeg" alt=""></td>
                             <td>
-                              <p>Дополнительная дверь ДГ-9 (деревянная), 800х2000 мм</p>
+                              <p>Дверь металлическая, сварная, утеплённая пр-во Россия "Стройгост"</p>
                             </td>
                             <td>
-                              <p>3200 руб.</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><img src="img/ДГ-9.gif" alt=""></td>
-                            <td>
-                              <p>Дополнительная дверь ДГ-9 (деревянная), 800х2000 мм</p>
-                            </td>
-                            <td>
-                              <p>3200 руб.</p>
+                              <p>10500 руб.</p>
                             </td>
                           </tr>
                           <tr>
-                            <td><img src="img/ДГ-9.gif" alt=""></td>
+                            <td><img src="img/doorhan12000.png" alt=""></td>
                             <td>
-                              <p>Дополнительная дверь ДГ-9 (деревянная), 800х2000 мм</p>
+                              <p>Дверь металлическая, стальная, утепленная "DoorHan"</p>
                             </td>
                             <td>
-                              <p>3200 руб.</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><img src="img/ДГ-9.gif" alt=""></td>
-                            <td>
-                              <p>Дополнительная дверь ДГ-9 (деревянная), 800х2000 мм</p>
-                            </td>
-                            <td>
-                              <p>3200 руб.</p>
+                              <p>12500 руб.</p>
                             </td>
                           </tr>
                           <tr>
-                            <td><img src="img/ДГ-9.gif" alt=""></td>
+                            <td><img src="img/Аргус.gif" alt=""></td>
                             <td>
-                              <p>Дополнительная дверь ДГ-9 (деревянная), 800х2000 мм</p>
+                              <p>Дверь металлическая, стальная, утепленная "Аргус"</p>
                             </td>
                             <td>
-                              <p>3200 руб.</p>
+                              <p>14000 руб.</p>
                             </td>
                           </tr>
                           <tr>
-                            <td><img src="img/ДГ-9.gif" alt=""></td>
+                            <td><img src="img/Кондор.gif" alt=""></td>
                             <td>
-                              <p>Дополнительная дверь ДГ-9 (деревянная), 800х2000 мм</p>
+                              <p>Дверь металлическая, стальная, утеплённая "Кондор-3"</p>
                             </td>
                             <td>
-                              <p>3200 руб.</p>
+                              <p>16500 руб.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><img src="img/dverlogika.jpeg" alt=""></td>
+                            <td>
+                              <p>Дверь металлическая, стальная, утеплённая "Логика"</p>
+                            </td>
+                            <td>
+                              <p>15500 руб.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><img src="img/ПротивопожарнаяБытовки.gif" alt=""></td>
+                            <td>
+                              <p>Дверь входная, противопожарная ДГ 2050х800 мм. пр-во "БЫТОВКИ.РФ" (Порошковая окраска,
+                                теплоизоляция, ригельный замок)</p>
+                            </td>
+                            <td>
+                              <p>21000 руб.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><img src="img/Дверьпротивопожарная.gif" alt=""></td>
+                            <td>
+                              <p>Дверь противопожарная</p>
+                            </td>
+                            <td>
+                              <p>24000 руб.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><img src="img/zamok-vreznoy-zenit-zvr.gif" alt=""></td>
+                            <td>
+                              <p>Дополнительный замок ЗВР-3</p>
+                            </td>
+                            <td>
+                              <p>2650 руб.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><img src="img/dverdvuxstvorchataya.jpeg" alt=""></td>
+                            <td>
+                              <p>Дверь двустворчатая металлическая, стальная, утеплённая ( 2100 х 1800 мм)</p>
+                            </td>
+                            <td>
+                              <p>21500 руб.</p>
                             </td>
                           </tr>
                         </table>
                       </div>
 
-                      <a class="nav-link nav-tabs-products-equipment__links"  data-toggle="collapse" href="#v-pills-2" role="tab"
+                      <a class="nav-link nav-tabs-products-equipment__links" data-toggle="collapse" href="#v-pills-2"
+                         role="tab"
                          aria-controls="v-pills-2" aria-selected="false">
                         <span class="nav-link__icon"><img src="img/dop_4263.png" alt=""></span>
                         <span class="nav-link__text">электрика</span>
@@ -896,13 +956,15 @@
                       <div class="tab-pane fade" id="v-pills-2" role="tabpanel"
                            aria-labelledby="v-pills-2-tab">
                         <table class="table table-equipment">
+
                           <tr>
-                            <td><img src="img/ДГ-9.gif" alt=""></td>
+                            <td><img src="img/Открытая.gif" alt=""></td>
                             <td>
-                              <p>Дополнительная дверь ДГ-9 (деревянная), 800х2000 мм</p>
+                              <p> Электропроводка "Эконом" (светильник, две двойных розетки, выключатель, два автомата,
+                                проводка открытая на скобах)</p>
                             </td>
                             <td>
-                              <p>3200 руб.</p>
+                              <p>5600 руб.</p>
                             </td>
                           </tr>
                           <tr>
@@ -2282,6 +2344,41 @@
           </div>
         </div>
       </div>
+
+      <div class="col-12">
+        <div class="projects-text products-analogies">
+          <h3 class="projects-text__title">Продукты с похожими характеристиками</h3>
+
+          <div class="box-text">
+            <p>Предлагаем купить модульное здание из четырех модулей под офис в Санкт-Петербурге и Лен области от
+              производителя общественным и коммерческим организациям. Внутреннее
+              пространство 6 х 9,6 м имеет сложную планировку для рациональной организации процесса управления
+              производством. Комнаты могут использоваться под кабинеты персонала,
+              руководства, переговорные, санузлы, подсобные помещения.</p>
+
+            <ul class="projects-text-list size-list my-ul">
+              <li>
+                <div class="choice-icon"><img src="img/2.svg" alt=""></div>
+                <a href="#" class="choice-text"><span>Одноэтажные
+                  модульные здания</span></a>
+              </li>
+              <li>
+                <div class="choice-icon"><img src="img/razmer-svg.svg" alt=""></div>
+                <div class="choice-text"><a href="#"><span>Модульные
+                  здания 6 на 5</span></a>
+                </div>
+              </li>
+              <li>
+                <div class="choice-icon"><img src="img/bloki-svg2.svg" alt=""></div>
+                <div class="choice-text"><a href="#"><span>Модульное здание из
+                  2 блок-контейнеров</span></a></div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
     </div>
 
   </div>
@@ -2438,10 +2535,14 @@
             <a href="#" class="politics-link color-white" target="_blank">Политика конфиденциальности</a>
 
             <ul class="list-social my-ul">
-              <li><img src="img/instagram-logo.png" alt=""></li>
-              <li><img src="img/facebook-logo.png" alt=""></li>
-              <li><img src="img/youtube-symbol.png" alt=""></li>
-              <li><img src="img/vk-social-logotype.png" alt=""></li>
+              <li><a href="https://www.instagram.com/bytovki_rf/" target="_blank"><img src="img/instagram-logo.png"
+                                                                                       alt=""></a></li>
+              <li><a href="https://www.facebook.com/Bytovkirf-335296670222563/" target="_blank"><img
+                  src="img/facebook-logo.png" alt=""></a></li>
+              <li><a href="https://www.youtube.com/channel/UCtT78SwXCpXTFT3fsVm2ojg" target="_blank"><img
+                  src="img/youtube-symbol.png" alt=""></a></li>
+              <li><a href="https://vk.com/bytovki_rf" target="_blank"><img src="img/vk-social-logotype.png" alt=""></a>
+              </li>
             </ul>
 
             <div class="copyright-lines">

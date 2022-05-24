@@ -203,7 +203,10 @@ header
         height: 20px
         transition: .3s ease
       &:hover
-        color: $accent
+        background: $accent
+        color: #fff
+        &:before
+          background: $accent
     &:last-child
       a
         &:before
@@ -256,6 +259,7 @@ header
   top: 0
   background: #00a7e6
   display: none
+  padding: 0
 
 
 .search-dropdown
