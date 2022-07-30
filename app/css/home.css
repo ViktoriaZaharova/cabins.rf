@@ -823,7 +823,7 @@
           justify-content: center;
   font-size: 24px;
   padding: 14px; }
-  .consultation-header h3 {
+  .consultation-header__title, .consultation-header h3 {
     color: #fff; }
   .consultation-header img {
     margin: 0 10px 0 0; }
@@ -1349,3 +1349,123 @@
   position: absolute;
   bottom: 0;
   top: auto !important; }
+
+/*==========  exchange-page   ==========*/
+.exchange-section {
+  margin: 85px 0; }
+  .exchange-section h2 {
+    font-size: 30px; }
+  .exchange-section__icon {
+    margin: 0 auto 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .exchange-section h3 {
+    color: #666;
+    font-size: 22px; }
+
+.exchange-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.exchange-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #e8e8e8;
+  margin: 80px 0 0; }
+
+.exchange-step {
+  text-align: center;
+  margin: 0 0 85px;
+  position: relative;
+  padding: 0 133px 0 0;
+  color: #242424;
+  font-size: 18px; }
+  .exchange-step:last-child {
+    padding: 0; }
+    .exchange-step:last-child:before {
+      display: none; }
+  .exchange-step:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 30%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 133px;
+    height: 9px;
+    background: url("../img/arrow-right.png") no-repeat center;
+      background-size: 100%; }
+  .exchange-step__icon {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 30px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 47px; }
+    .exchange-step__icon img {
+      max-height: 100%; }
+  .exchange-step__num {
+    position: absolute;
+    -webkit-box-shadow: 0 0 10px 0 rgba(18, 31, 49, 0.29);
+            box-shadow: 0 0 10px 0 rgba(18, 31, 49, 0.29);
+    background-color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    bottom: -14px;
+    right: -14px;
+    color: #008cba;
+    font-size: 18px; }
+
+.ransom-wrapper {
+  border: none; }
+
+.exchange-callback {
+  margin: 0 0 100px; }
+  .exchange-callback h2 {
+    font-size: 30px;
+    margin: 0 auto 58px; }
+
+/*==========  exchange-page end  ==========*/

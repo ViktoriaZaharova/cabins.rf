@@ -73,7 +73,7 @@
   .footer-box
     width: calc(25% - 10px)
     margin: 0 0 30px
-    h3
+    &__title, h3
       font-size: 21px
 
   .schedule
@@ -215,7 +215,31 @@
   .header-product-box__title
     font-size: 18px
 
+  .exchange-image
+    margin: 0 auto 20px
 
+  .exchange-section
+    margin: 50px 0
+    h2
+      font-size: 24px
+      margin: 0 auto 20px
+    &__icon
+      margin: 0 auto 20px
+
+  .exchange-wrapper
+    margin: 40px auto 0
+
+  .exchange-step
+    margin: 0 0 30px
+    padding: 0 50px 0 0
+    &:before
+      width: 50px
+
+  .exchange-callback
+    margin: 0
+    h2
+      font-size: 24px
+      margin: 0 auto 30px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -542,6 +566,17 @@
   .characteristics-product-wrapper
     padding: 11px 0 86px
 
+  .exchange-step
+    width: 100%
+    padding: 0
+    &:before
+      display: none
+
+  .exchange-section h2
+    br
+      display: none
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
   .footer-box
@@ -680,7 +715,7 @@
   .consultation-box .consultation-body
     padding: 0 30px 30px
 
-  .consultation-box .consultation-header h3
+  .consultation-box .consultation-header h3, .consultation-header__title
     font-size: 22px
 
   .category-card

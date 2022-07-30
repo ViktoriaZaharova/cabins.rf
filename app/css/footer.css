@@ -96,7 +96,7 @@ footer {
 
 .footer-box {
   width: calc(20% - 30px); }
-  .footer-box h3 {
+  .footer-box__title, .footer-box h3 {
     padding: 0 0 10px;
     font-size: 23px;
     color: #fff;

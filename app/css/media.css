@@ -55,7 +55,7 @@
   .footer-box {
     width: calc(25% - 10px);
     margin: 0 0 30px; }
-    .footer-box h3 {
+    .footer-box__title, .footer-box h3 {
       font-size: 21px; }
   .schedule {
     margin: 15px 0; }
@@ -163,7 +163,28 @@
   .btn-order-product {
     max-width: 200px; }
   .header-product-box__title {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .exchange-image {
+    margin: 0 auto 20px; }
+  .exchange-section {
+    margin: 50px 0; }
+    .exchange-section h2 {
+      font-size: 24px;
+      margin: 0 auto 20px; }
+    .exchange-section__icon {
+      margin: 0 auto 20px; }
+  .exchange-wrapper {
+    margin: 40px auto 0; }
+  .exchange-step {
+    margin: 0 0 30px;
+    padding: 0 50px 0 0; }
+    .exchange-step:before {
+      width: 50px; }
+  .exchange-callback {
+    margin: 0; }
+    .exchange-callback h2 {
+      font-size: 24px;
+      margin: 0 auto 30px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -443,7 +464,14 @@
   .total-sum-product .btn {
     margin: 10px auto 0; }
   .characteristics-product-wrapper {
-    padding: 11px 0 86px; } }
+    padding: 11px 0 86px; }
+  .exchange-step {
+    width: 100%;
+    padding: 0; }
+    .exchange-step:before {
+      display: none; }
+  .exchange-section h2 br {
+    display: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -546,7 +574,7 @@
     padding: 0; }
   .consultation-box .consultation-body {
     padding: 0 30px 30px; }
-  .consultation-box .consultation-header h3 {
+  .consultation-box .consultation-header h3, .consultation-header__title {
     font-size: 22px; }
   .category-card {
     padding: 20px; }

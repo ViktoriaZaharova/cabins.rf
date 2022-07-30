@@ -701,7 +701,7 @@
   justify-content: center
   font-size: 24px
   padding: 14px
-  h3
+  &__title, h3
     color: #fff
   img
     margin: 0 10px 0 0
@@ -1177,3 +1177,89 @@
   position: absolute
   bottom: 0
   top: auto !important
+
+
+/*==========  exchange-page   ==========*/
+.exchange-section
+  margin: 85px 0
+  h2
+    font-size: 30px
+  &__icon
+    margin: 0 auto 30px
+    display: flex
+    align-items: center
+    justify-content: center
+  h3
+    color: #666
+    font-size: 22px
+
+.exchange-image
+  display: flex
+  align-items: center
+  justify-content: center
+
+.exchange-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: center
+  border-bottom: 1px solid #e8e8e8
+  margin: 80px 0 0
+
+.exchange-step
+  text-align: center
+  margin: 0 0 85px
+  position: relative
+  padding: 0 133px 0 0
+  color: #242424
+  font-size: 18px
+  &:last-child
+    padding: 0
+    &:before
+      display: none
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 30%
+    transform: translate(0,-50%)
+    width: 133px
+    height: 9px
+    background: url("../img/arrow-right.png") no-repeat center
+      size: 100%
+  &__icon
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 30px
+    width: fit-content
+    height: 47px
+    img
+      max-height: 100%
+  &__num
+    position: absolute
+    box-shadow: 0 0 10px 0 rgba(18, 31, 49, 0.29)
+    background-color: #fff
+    width: 28px
+    height: 28px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    bottom: -14px
+    right: -14px
+    color: #008cba
+    font-size: 18px
+
+.ransom-wrapper
+  border: none
+
+.exchange-callback
+  margin: 0 0 100px
+  h2
+    font-size: 30px
+    margin: 0 auto 58px
+
+/*==========  exchange-page end  ==========*/
